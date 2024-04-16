@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu-simple-desplegable</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- <link rel="stylesheet" href="./static/css/index.css">   -->
+        <link rel="shortcut icon" href="./static/img/favicon.ico" type="imagen/x-icon">
+        <script src="https://kit.fontawesome.com/5d2e47122f.js" crossorigin="anonymous"></script>
+    
+    </head>
+    <body>
+        <header class="cabecera">   <!--aqui va el menu de navegacion-->
+            <!-- <h1>Pagina de pruebas</h1> -->
+
+            <nav class="navegacion">   <!--uso el "nav" porque generalmente los menus de navegacion van en un "nav"-->
+                <a href="#" class="logo-empresa">
+                    Artdeco 
+                    <button class="logo-inicio">
+                        <i class="fa-solid fa-paint-roller"></i>
+                    </button>
+                </a>
+                
+                <ul class="menu">  <!--en la lista creo una clase "menu"-->
+                    <li><a href="#">solapa1</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="./menu1/solapa1-1.html">subsolapa1-1</a>
+                            </li>
+                            <li>
+                                <a href="./menu1/solapa1-2.html">subsolapa1-2</a>
+                            </li>
+                            <li>
+                                <a href="./menu1/solapa1-3.html">subsolapa1-3</a>
+                            </li>
+                        </ul> 
+                    </li>
+                    <li><a href="#">solapa2</a>
+                        <ul class="submenu">
+                            <li><a href="#">subsolapa2-1</a></li>
+                            <li><a href="#">subsolapa2-2</a></li>
+                            <li><a href="#">subsolapa2-3</a></li>
+                        </ul> 
+                    </li>
+                    <li><a href="#">solapa3</a>
+                        <ul class="submenu">
+                            <li><a href="#">subsolapa3-1</a></li>
+                            <li><a href="#">subsolapa3-2</a></li>
+                            <li><a href="#">subsolapa3-3</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">solapa4</a>
+                        <ul class="submenu">
+                            <li><a href="#">subsolapa4-1</a></li>
+                            <li><a href="#">subsolapa4-2</a></li>
+                            <li><a href="#">subsolapa4-3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/" target="_blank" class="boton-de-inicio">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                            <span class="texto-del-inicio">Inicio de sesion</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div>
+            <nav class="navegacion-lateral">
+                <!--<a href="#" class="logo">logo</a>   puede que no lo use -->
+                <ul class="menu-lateral">
+                    <li><a href="#coc">Cocina</a></li>
+                    <li><a href="#com">Comedor</a></li>
+                    <li><a href="#liv">Living</a></li>
+                    <li><a href="#dor">Dormitorio</a></li>
+                    <li><a href="#bañ">Baño</a></li>   
+                    <li><a href="#">Exterior</a>  
+                        <ul class="submenu-lateral">
+                            <li><a href="#jardineria">Jardin</a></li>
+                            <li><a href="#terrazas">Terraza</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                
+            </nav>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <section class="fondo-cocina" id="coc">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h2 class="section-heading">Cocina</h2>
+                    </div>
+                </div>
+                          
+            </div>        
+        </section>
+        
+        <br>
+        <br>
+        <section class="fondo-comedor" id="com">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h2 class="section-heading">Comedor</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        
+        <section class="fondo-living" id="liv">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">                
+                        <h2 class="section-heading">Living</h2>                    
+                    </div>
+                </div>
+            </div>                
+        </section> 
+        <br>
+        <br>
+         
+        <section class="fondo-dormitorio" id="dor">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h2 class="section-heading">Dormitorios</h2>
+                    </div>
+                </div>
+            </div>   
+        </section>
+        <br>
+        <br>
+        
+        <section class="fondo-baño" id="bañ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h2 class="section-heading">Baño</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        
+        <section class="fondo-jardin" id="jardineria">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h2 class="section-heading">Jardin</h2>
+                    </div>
+                </div>               
+            </div>
+        </section>
+        <br>
+        <br>
+     
+        <section class="fondo-terraza" id="terrazas">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h2 class="section-heading">Terraza</h2>
+                    </div>
+                </div>   
+            </div>
+        </section>
+
+    </body>
+    <footer>
+        <h1>PIE DE PAGINA</h1>
+    </footer>
+</html>

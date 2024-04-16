@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background: #52313c;
+    /*font-family: sans-serif; es para todos pero prefiero separarlo por ahora*/
+    padding: 90px 20px 0;
+}
+
+.texto-del-inicio{
+    color: #fff;
+    padding: 5px;
+    background-color: black important!;
+    border-radius: 6px;
+    font-size: 10px;
+ 
+}
+.cabecera{
+    background-color:rgb(148, 128, 128);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+.navegacion{
+    display: flex;
+    justify-content: space-between;    
+    /*width: 650px; */ 
+    /*max-width: 992px;  este maximo me empujaba la mitad del boton de inicio para abajo*/  
+    margin: 30 auto; /*"auto" es para que se centre en la pagina*/
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+    
+}
+
+.menu{
+    position: relative;
+    /*display: inline-block;*/
+    display: flex;
+    list-style: none;
+    margin-right: 40px; /*separo las solapas 40px de la derecha porque el logo lo corri 40px a la izquierda*/
+
+}
+
+.menu > li > a{  /*para darle estilo a los enlaces "solapas1,2,3,4"*/
+    
+    /*padding: 15px 20px;  rellenos de 15px arriba y abajo y 20px a los costados*/
+    color: black;
+    /*font-family: sans-serif;*/
+    font-size: 16px;
+    width: max-content;
+    text-decoration: none;  /*saco el subrayado*/   
+    line-height: 80px; 
+    margin: 0 40px;  /*arriba/abajo nada porque ya esta centrado y los separo 25*/
+    text-transform: uppercase;  /*todo en mayuscula*/
+    padding: 8px 12px;    
+}
+.menu ul ul {
+    display: none;
+}
+
+.logo-empresa{
+    color: rgb(190, 72, 17);
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 40px; /*le doy 0 para arriba/abajo y 40 derecha/izquierda */
+    line-height: 80px;  /*me centro el logo porque le di el tamaño del navegador*/
+    text-decoration: none;
+    
+}
+.logo-inicio {   
+    background: none;
+    color: rgb(190, 72, 17);
+    border: none;
+    font-size: 25px;
+    padding: 0 20px;
+    line-height: 60px;
+    
+    
+}
+/******PRUEBA*******/
+.menu > li > a:hover{   /*de esta forma solo me paro sobre los menu "solapa" pero no sobre sus submenus*/
+    background-color: rgb(44, 43, 43);
+    color: white;
+    /*transform: scale(1.3);*/
+   
+    border-radius: 5px;
+    transition: all .3s;
+}
+.menu ul li:hover ul {
+    display: block;
+
+}
+
+/************************************** submenu****************************************************************************/
+.submenu{
+    position: absolute;
+    background: #333333;
+    
+    /*width: 120%;   solo lo uso si la palabra del "submenu" supera el tamaño del "menu" del que viene*/  
+    /*display: none;  es para que los submenus no aparezcan*/
+    visibility: hidden;  /*este reeemplaza al "display" para poder darle un efecto*/
+    opacity: 0;
+    transition: opacity 1s;
+    list-style: none;
+   
+}
+
+.submenu li a{
+    display: flex; 
+    flex-direction: column;
+    padding: 15px;   /*les dio 15px a todos los lado*/
+    color: white;  /*las letras son blancas ahora*/
+    text-decoration: none;  /*saco el subrayado*/
+    border: 1px solid black;  /*recarca los bordes de cada caja subsolapa*/
+    border-radius: 6px;
+    transition: all 0s;
+}
+.menu li:hover .submenu{
+    
+    visibility: visible;  /*este reeemplaza al "display" para poder darle un efecto*/
+    opacity: 1;   
+
+}
+
+/*******************************************************************************************************/
+
+
+.navegacion-lateral{
+ 
+    width:  100px;
+    background-color: rgb(194, 191, 191) ;
+    /*position: fixed;   esto sirve para que el menu quede fijo en la posicion que esta auque se escrolee, aca no tiene sentido usarlo*/ 
+    border-radius: 3px;
+}
+
+
+.navegacion-lateral ul{   /*estoy llamando a las listas "ul" que estan dentro de "nav-lat"*/
+    list-style: none;   /*saque los puntos de la lista*/
+    /*display: block;*/
+    /*justify-content: space-between;*/
+}
+
+.menu-lateral > li > a{
+    display: block; /*les damos bloques*/
+    padding: 15px; 
+    color: black;
+    font-family: 'Arial Narrow Bold';  /*cambiar por uno mejor*/
+    text-decoration: none;
+    width: 100%;
+    
+}
+.menu-lateral > li > a:hover{
+   
+    background-color: rgba(0,0,0,0.3);
+    cursor: pointer;   
+    
+}
+.menu-lateral li a:hover{
+    /*color: blue;  para que cambien de color: cocina, comedor, etc */
+    
+    transition: all .3s;
+}
+
+.menu-lateral li:hover .submenu-lateral{
+    display: block;
+    visibility: visible;  /*este reeemplaza al "display" para poder darle un efecto*/
+    opacity: 1;   
+    transition: all .6s;
+    background-color: rgba(0,0,0,0.2);
+}
+.menu-lateral li .submenu-lateral{
+    padding: 15px;
+    margin: 0;
+    background: rgba(0,0,0,0.2);
+    
+    
+}
+
+/**************************************submenu lateral****************************************************/
+.submenu-lateral{
+    position: flex;
+    visibility: hidden;  /*este reeemplaza al "display" para poder darle un efecto*/
+    opacity: 0;
+    transition: opacity 1s;
+    border-radius: 3px; 
+    display: none;  
+}
+.submenu-lateral li{
+    display: block;
+   
+}
+.submenu-lateral li a{
+    display: block;  /*coloco las "subsolapas" en bloque*/
+    padding: 15px;   /* les dio 15px a todos los lado*/
+    font-size: 13px;
+    color: black;  /*las letras son blancas ahora*/
+    text-decoration: none;  /*saco el subrayado*/
+    
+    transition: all 0.5s;
+   
+}
+.icono{
+    float: right;
+    font-size: 16px;
+}
+h2{
+    margin: 10px;
+    color: black;
+    /*font-size: 20px;*/
+    font-family: 'Arial Narrow'; 
+       
+}
+.fondo-cocina{
+    height: 700px;
+    background-image: url("../static/img/imagen-cocina.jpg");
+    background-size: contain;
+    background-position: center;
+    opacity: 0.3;
+}
+
+
+.fondo-comedor{
+    height: 700px;
+    background-image: url("../static/img/imagen-comedor.jpg");
+    background-size: contain;
+    background-position: center;
+    opacity: 0.3;
+}
+
+.fondo-living{
+    height: 700px;
+    background-image: url("../static/img/imagen-deco.jpg");
+    background-size: contain;
+    background-position: center;
+    opacity: 0.3;
+}
+.fondo-dormitorio{
+    height: 700px;
+    background-image: url("../static/img/imagen-dormitorio.jpg");
+    background-size: contain;
+    background-position: center;
+    opacity: 0.3;
+}
+.fondo-baño{
+    height: 700px;
+    background-image: url("../static/img/imagen-baño.jpg");
+    background-size: contain;
+    background-position: center;
+    opacity: 0.3;
+}
+.fondo-jardin{
+    height: 700px;
+    background-image: url("../static/img/imagen-jardin.jpg");
+    background-size: contain;
+    background-position: center;
+    opacity: 0.3;
+}
+.fondo-terraza{
+    height: 700px;
+    background-image: url("../static/img/imagen-terraza.jpg");
+    background-size: contain;
+    background-position: center;
+    opacity: 0.3;
+}

@@ -8,15 +8,16 @@
 body{
     background: #52313c;
     /*font-family: sans-serif; es para todos pero prefiero separarlo por ahora*/
-    padding: 90px 20px 0;
+    padding: 70px 5px 0;
 }
 
 .texto-del-inicio{
     color: #fff;
     padding: 5px;
-    background-color: black important!;
+    
     border-radius: 6px;
     font-size: 10px;
+
  
 }
 .cabecera{
@@ -67,6 +68,13 @@ body{
     display: none;
 }
 
+.menu li:nth-last-child(-n+1) a{
+    display: block;
+    line-height: 20px;
+    margin: 2px
+    ;
+}
+
 .logo-empresa{
     color: rgb(190, 72, 17);
     font-size: 25px;
@@ -96,7 +104,8 @@ body{
     transition: all .3s;
 }
 .menu ul li:hover ul {
-    display: block;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -219,7 +228,357 @@ h2{
     font-family: 'Arial Narrow'; 
        
 }
+
+/********************************************************** imagenes y fondo cocina******************************************************/
+.title-cocina{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(180, 81, 81);
+    text-align: center;
+    line-height: 50px;
+    font-size: 28px;
+    font-family: cursive;
+}
 .fondo-cocina{
+    background-image: url("../static/img/imagen-cocina.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 650px;
+    opacity: 0.6;
+
+}
+.image-grid-cocina{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 300px);
+    justify-content: center;
+    align-content: center;
+    column-gap: 80px;
+    row-gap: 40px;  
+}
+.image-grid-cocina img{
+    border-radius: 10px;
+    border: 3px solid rgb(35, 41, 37);
+    width: 100%;
+    height: 100%;
+    max-height: calc(90% - 3px);
+    object-fit: cover;
+}
+.pie-de-section-cocina{
+    height: 60px;
+    background-color: rgb(180, 81, 81);
+    width: 100%;
+    color: black;
+    font: message-box;
+
+}
+/******************************************************************* imagenes y fondo comedor***************************************************/
+.title-comedor{
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    text-align: center;
+    line-height: 50px;
+    font-size: 28px;
+    font-family: cursive;
+}
+.fondo-comedor{
+    background-image: url("../static/img/imagen-comedor.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 650px;
+    opacity: 0.6;
+}
+.image-grid-comedor{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 300px);
+    justify-content: center;
+    align-content: center;
+    column-gap: 80px;
+    row-gap: 40px;  
+}
+.image-grid-comedor img{
+    border-radius: 10px;
+    border: 3px solid rgb(35, 41, 37);
+    width: 100%;
+    height: 100%;
+    max-height: calc(90% - 3px);
+    object-fit: cover;
+}
+.pie-de-section-comedor{
+    height: 60px;
+    background-color: gray;
+    width: 100%;
+    color: black;
+    font: message-box;
+
+}
+/********************************************************** imagenes y fondo living****************************************************/
+.title-living{
+    width: 100%;
+    height: 50px;
+    background-color: goldenrod;
+    text-align: center;
+    line-height: 50px;
+    font-size: 28px;
+    font-family: cursive;
+}
+.fondo-living{
+    background-image: url("../static/img/imagen-living.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 650px;
+    opacity: 0.6;
+}
+.image-grid-living{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 300px);
+    justify-content: center;
+    align-content: center;
+    column-gap: 80px;
+    row-gap: 40px;  
+}
+.image-grid-living img{
+    border-radius: 10px;
+    border: 3px solid rgb(35, 41, 37);
+    width: 100%;
+    height: 100%;
+    max-height: calc(90% - 3px);
+    object-fit: cover;
+}
+.pie-de-section-living{
+    height: 60px;
+    background-color: goldenrod;
+    width: 100%;
+    color: black;
+    font: message-box;
+}
+/************************************************** imagenes y fondo dormitorio**************************************************/
+.title-dormitorio{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(143, 133, 189);
+    text-align: center;
+    line-height: 50px;
+    font-size: 28px;
+    font-family: cursive;
+}
+.fondo-dormitorio{
+    background-image: url("../static/img/imagen-dormitorio.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 650px;
+    opacity: 0.6;
+}
+.image-grid-dormitorio{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 300px);
+    justify-content: center;
+    align-content: center;
+    column-gap: 80px;
+    row-gap: 40px;  
+}
+.image-grid-dormitorio img{
+    border-radius: 10px;
+    border: 3px solid rgb(35, 41, 37);
+    width: 100%;
+    height: 100%;
+    max-height: calc(90% - 3px);
+    object-fit: cover;
+}
+.pie-de-section-dormitorio{
+    height: 60px;
+    background-color: rgb(143, 133, 189);
+    width: 100%;
+    color: black;
+    font: message-box;
+}
+/************************************************************ imagenes y fondo baño*********************************************************/
+.title-baño{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(23, 4, 109);
+    text-align: center;
+    line-height: 50px;
+    font-size: 28px;
+    font-family: cursive;
+}
+.fondo-baño{
+    background-image: url("../static/img/imagen-baño.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 650px;
+    opacity: 0.6;
+}
+.image-grid-baño{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 300px);
+    justify-content: center;
+    align-content: center;
+    column-gap: 80px;
+    row-gap: 40px;  
+}
+.image-grid-baño img{
+    border-radius: 10px;
+    border: 3px solid rgb(35, 41, 37);
+    width: 100%;
+    height: 100%;
+    max-height: calc(90% - 3px);
+    object-fit: cover;
+}
+.pie-de-section-baño{
+    height: 60px;
+    background-color: rgb(23, 4, 109);
+    width: 100%;
+    color: black;
+    font: message-box;
+}
+
+/*************************************************************** imagenes y fondo jardin*****************************************************/
+.title-jardin{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(83, 189, 106);
+    text-align: center;
+    line-height: 50px;
+    font-size: 28px;
+    font-family: cursive;
+}
+.fondo-jardin{
+    position: relative;
+    background-image: url("../static/img/imagen-jardin.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 650px;
+    opacity: 0.6;
+}
+.image-grid-jardin{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 300px);
+    justify-content: center;
+    align-content: center;
+    column-gap: 80px;
+    row-gap: 40px;  
+}
+.image-grid-jardin img{
+    border-radius: 10px;
+    border: 3px solid rgb(35, 41, 37);
+    width: 100%;
+    height: 100%;
+    max-height: calc(90% - 3px);
+    object-fit: cover;
+}
+.pie-de-section-jardin{
+    height: 60px;
+    background-color: rgb(83, 189, 106);
+    width: 100%;
+    color: black;
+    font: message-box;
+}
+/************************************************************ imagenes y fondo terrazas*****************************************************/
+.title-terraza{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(192, 138, 58);
+    text-align: center;
+    line-height: 50px;
+    font-size: 28px;
+    font-family: cursive;
+}
+.fondo-terraza{
+    position: relative;
+    background-image: url("../static/img/imagen-terraza.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 650px;
+    opacity: 0.6;
+}
+.image-grid-terraza{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    /*grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));   NO LO ENTENDI BIEN AUN */
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 300px);
+    justify-content: center;
+    align-content: center;
+    column-gap: 80px;
+    row-gap: 40px;  
+}
+.image-grid-terraza img{
+    border-radius: 10px;
+    border: 3px solid rgb(35, 41, 37);
+    width: 100%;
+    height: 100%;
+    max-height: calc(90% - 3px);
+    object-fit: cover;
+}
+.pie-de-section-terraza{
+    height: 60px;
+    background-color: rgb(192, 138, 58);
+    width: 100%;
+    color: black;
+    font: message-box;
+}
+.pie-de-pagina{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 600px){
+    .image-grid{
+        grid-template-columns: repeat(1, minmax (200px, 1fr));  /*lo tengo que cabiar para que sean dos columnas */
+    }
+}
+
+
+
+/*intentamos sombrear 
+.contenedor{
+    position: relative;
+    display: inline-block;
+}
+.contenedor img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.contenedor::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+termina sombreado. No funciono, quedo horrible*/
+
+/*.fondo-cocina{
     height: 700px;
     background-image: url("../static/img/imagen-cocina.jpg");
     background-size: contain;
@@ -270,4 +629,4 @@ h2{
     background-size: contain;
     background-position: center;
     opacity: 0.3;
-}
+}*/

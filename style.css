@@ -140,13 +140,13 @@ body{
 
 }
 
-/*******************************************************************************************************/
+/*********************************************************menu lateral**********************************************/
 
 
 .navegacion-lateral{
  
-    width:  100px;
-    background-color: rgb(194, 191, 191) ;
+    width:  150px;
+    background-color: rgb(164, 98, 98) ;
     /*position: fixed;   esto sirve para que el menu quede fijo en la posicion que esta auque se escrolee, aca no tiene sentido usarlo*/ 
     border-radius: 3px;
 }
@@ -163,28 +163,27 @@ body{
     padding: 15px; 
     color: black;
     font-family: 'Arial Narrow Bold';  /*cambiar por uno mejor*/
-    text-decoration: none;
-    width: 100%;
-    
+    font-size: 18px;
+    text-decoration: none;    
 }
 .menu-lateral > li > a:hover{
-   
+    color: #fff;
     background-color: rgba(0,0,0,0.3);
     cursor: pointer;   
     
 }
-.menu-lateral li a:hover{
+.menu-lateral li a:hover{    /*tengo que fucionarla con la de arriba*/
     /*color: blue;  para que cambien de color: cocina, comedor, etc */
     
     transition: all .3s;
 }
 
-.menu-lateral li:hover .submenu-lateral{
+.menu-lateral li:hover .submenu-lateral{  /*jardin terraza*/
     display: block;
     visibility: visible;  /*este reeemplaza al "display" para poder darle un efecto*/
     opacity: 1;   
     transition: all .6s;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(125, 14, 14, 0.242);
 }
 .menu-lateral li .submenu-lateral{
     padding: 15px;
@@ -198,7 +197,7 @@ body{
 .submenu-lateral{
     position: flex;
     visibility: hidden;  /*este reeemplaza al "display" para poder darle un efecto*/
-    opacity: 0;
+   
     transition: opacity 1s;
     border-radius: 3px; 
     display: none;  
@@ -210,12 +209,13 @@ body{
 .submenu-lateral li a{
     display: block;  /*coloco las "subsolapas" en bloque*/
     padding: 15px;   /* les dio 15px a todos los lado*/
-    font-size: 13px;
+    font-size: 18px;
     color: black;  /*las letras son blancas ahora*/
     text-decoration: none;  /*saco el subrayado*/
-    
-    transition: all 0.5s;
-   
+    transition: all 0.5s;  
+}
+.submenu-lateral li a:hover{
+    color: #fff;
 }
 .icono{
     float: right;

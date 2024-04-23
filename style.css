@@ -546,6 +546,27 @@ h2{
     color: #fff;
     text-align: center;
 }
+.boton{
+    position: fixed;  /*lo fijo a la posicion de 350px respecto del limite inferior*/
+    /*bottom: 320px;  lo elevo 350px ya que el pie de pagina tiene 300px */
+    bottom: 100px;
+    right: 50px;  /*lo alejo 50px del lateral derecho*/
+    height: 35px;
+    width: 35px;
+    font-size: 45px;
+    
+}
+
+.boton i{
+    border: black solid 2px;
+    border-radius: 50%;
+    color: rgb(28, 4, 28);
+    cursor: pointer;
+} 
+.boton i:hover{
+    color: #c42d5f;
+}
+                                                                                                                                                                                                          
 
 
 @media only screen and (max-width: 600px){

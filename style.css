@@ -188,9 +188,27 @@ body{
 .menu-lateral li .submenu-lateral{
     padding: 15px;
     margin: 0;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.2);   
+}
+
+/************************************************video de nosotros*********************************************************/
+
+.contenedor-menu-lateral-video{
+    display: flex;
     
-    
+}
+.contenedor-video-central{
+    display: block;
+    margin-left: 280px;
+    border: black solid 3px;
+}
+/*falta preguntar como eliminar la separacon entre video y comentario*/
+.comentario-video{
+    padding-bottom: 8px;
+    font-size: 28px;
+    font-family: cursive;
+    color: rgb(18, 10, 18);
+    background-color: rgb(220, 167, 68);
 }
 
 /**************************************submenu lateral****************************************************/

@@ -200,7 +200,7 @@ body{
 .contenedor-video-central{
     display: block;
     margin-left: 280px;
-    border: black solid 3px;
+    /*border: black solid 3px;*/
 }
 /*falta preguntar como eliminar la separacon entre video y comentario*/
 .comentario-video{
@@ -209,6 +209,9 @@ body{
     font-family: cursive;
     color: rgb(18, 10, 18);
     background-color: rgb(220, 167, 68);
+}
+.comentario-video p{
+    text-align: center;  /*envio el texto al centro*/
 }
 
 /**************************************submenu lateral****************************************************/

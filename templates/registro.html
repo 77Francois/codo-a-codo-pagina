@@ -3,9 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registrarse</title>
+    <link rel="shortcut icon" href="./static/img/favicon.ico" type="imagen/x-icon">  <!--tengo que asegurarme que es el icono que busco-->
 </head>
 <body>
-    registrarse
+    <header>
+         <nav>
+            <h1>ART/DEC</h1>
+         </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Registrarse</h2>
+            <form action="#" method="get">  <!--  action="" es la ruta por donde va a enviar lo que ingrese por el metodo que especifique. POST lo uso para enviar a un servidor-->
+                <div>
+                    <label for="">Nombre</label>
+                    <input type="text" name="campo-nombre" id="campo-nombre" placeholder="Por favor ingrese su nombre" required>
+                </div>
+                <div>
+                    <label for="">Apellido</label>
+                    <input type="text" name="campo-apellido" id="campo-apellido" placeholder="Por favor ingrese su apellido" required>
+                </div>
+                <div>
+                    <label for="birthdate">Fecha de nacimiento</label>
+                    <input type="date" name="campo-fecha" id="campo-fecha" required>
+                </div>
+                <div>
+                    <label for="">e-mail</label>
+                    <input type="email" name="campo-email" id="campo-email" placeholder="Por favor ingrese su e-mail" required>
+                </div>
+                <div>
+                    <label for="">Pais de recidencia</label required>
+                    <select name="pais" id="pais">
+                        <option value="">Pais</option>
+                        <option value="BR">Brasil</option>
+                        <option value="JA">Japon</option>
+                        <option value="RU">Rusia</option>
+                        <option value="CHI">China</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Barrio</label>
+                    <select name="barrio" id="barrio" required>
+                        <option value="CABA">Capital federal</option>
+                        <option value="moron">Moron</option>
+                        <option value="Avellaneda">Avellaneda</option>
+                        <option value="Quilmes">Quilmes</option>
+                        <option value="Pacheco">Pacheco</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Contraseña</label>
+                    <input type="password" name="campo-contraseña" id="campo-contraseña" placeholder="ingrese una contraseña valida" required>
+                </div>
+                <div>
+                    <input type="checkbox" id="term-cond" name="term-cond" requireds>
+                    <label for="term-cond">Acepto os terminos y condiciones</label>
+                </div>
+                <!--<input type="submit" value="Registrarse">  este equivale a button-->
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+    </main>
+   
 </body>
 </html>

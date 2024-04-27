@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
+    <link rel="stylesheet" href="../static/css/registro.css">
     <link rel="shortcut icon" href="./static/img/favicon.ico" type="imagen/x-icon">  <!--tengo que asegurarme que es el icono que busco-->
 </head>
 <body>
     <header>
-         <nav>
+         <div class="nom-pag">
             <h1>ART/DEC</h1>
-         </nav>
+         </div>
     </header>
+    <br>
+    <br>
+    <br>
+    
     <main>
-        <section>
-            <h2>Registrarse</h2>
-            <form action="#" method="get">  <!--  action="" es la ruta por donde va a enviar lo que ingrese por el metodo que especifique. POST lo uso para enviar a un servidor-->
+        <section class="reg-container">
+            <div class="registro-items">
+                <h2>Registrarse</h2>
+                <form action="#" method="get">  <!--  action="" es la ruta por donde va a enviar lo que ingrese por el metodo que especifique. POST lo uso para enviar a un servidor-->
                 <div>
                     <label for="">Nombre</label>
                     <input type="text" name="campo-nombre" id="campo-nombre" placeholder="Por favor ingrese su nombre" required>
@@ -61,10 +67,24 @@
                     <label for="term-cond">Acepto os terminos y condiciones</label>
                 </div>
                 <!--<input type="submit" value="Registrarse">  este equivale a button-->
-                <button type="submit">Registrarse</button>
-            </form>
+                <button type="submit" class="boton-registro">Registrarse</button>
+                </form>
+            </div>
         </section>
     </main>
-   
+    <br>
+       
+    <section>
+        <div class="boton">
+            <button class="boton-volver">
+                <a href="../index.html" class="texto">Volver</a>
+            </button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </section>
 </body>
 </html>

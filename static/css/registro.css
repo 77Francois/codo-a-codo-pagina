@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: rgb(175, 162, 162);
+}
+.nom-pag{
+    display: flex;
+    height: 70px;
+    width: 100;
+    background: rgb(228, 150, 5);
+    color: white;
+    padding: 0 0 0 15px;
+    
+}
+h1{
+    line-height: 70px;
+    vertical-align: middle;
+    text-align: center;
+}
+.reg-container {
+    background-color: rgb(228, 150, 5);
+    display: block;
+    height: auto;
+    width: 380px;
+    border: black solid 3px;
+    border-radius: 7px;
+    margin-left: 490px;
+}
+.registro-items {
+    display: flex;
+    flex-direction: column;
+}
+div {
+    font-size: 15px;
+    padding: 15px 0 15px 10px; 
+}
+input {
+    border-radius: 8px;
+}
+h2 {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+label {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.boton-registro {
+    margin-left: 15px;
+    background: rgb(47, 7, 47);
+    color: white;
+    border: black solid 2px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 4px;
+    padding: 7px;
+}
+}
+.boton {
+    display: block;
+    width: 100%;
+    
+}
+.boton-volver {
+    margin-left: 635px;
+    font-size: 21px;
+    background: rgb(228, 150, 5);
+    border-radius: 3px;
+     
+}
+.texto {
+    padding: 7px;
+    color: black;
+    text-decoration: none;
+}

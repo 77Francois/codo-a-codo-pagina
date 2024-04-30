@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: rgb(85, 151, 99);
+}
+.nom-pag{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: rgb(23, 67, 50);
+    color: white;
+    padding: 0 0 0 15px;
+    
+}
+h1{
+    line-height: 80px;
+    vertical-align: middle;
+}
+.google-face-container {
+    /*background-color: rgb(103, 138, 157);*/
+    display: block;
+    height: auto;
+    width: 380px;
+    /*border: black solid 3px;
+    border-radius: 7px;*/
+    margin-left: 490px;
+    
+}
+.item-google {
+    width: 360px;
+    
+    background: white;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    
+}
+.item-face {
+    width: 360px;
+    background: blue;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.correo-pass {
+    background-color: rgb(103, 138, 157);
+    display: block;
+    height: auto;
+    width: 380px;
+    border: black solid 3px;
+    border-radius: 7px;
+    margin-left: 495px;   
+}
+.correo-electronico{
+    display: flex;
+    flex-direction: column;
+}
+p{
+    padding: 7px;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input{
+    width: 350px;
+    height: 30px;
+}
+div {
+    font-size: 15px;
+    padding: 15px 0 15px 10px; 
+}
+input {
+    border-radius: 8px;
+    width: 350px;
+}
+
+label {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.boton-inicio {
+    margin-left: 15px;
+    background: rgb(23, 67, 50);
+    color: white;
+    border: black solid 2px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 4px;
+    padding: 7px;
+    width: 350px;
+}
+
+.boton {
+    display: block;
+    width: 100%;
+    
+}
+.boton-volver {
+    margin-left: 635px;
+    font-size: 21px;
+    background: rgb(103, 138, 157);
+    border-radius: 3px;
+     
+}
+.texto {
+    padding: 7px;
+    color: black;
+    text-decoration: none;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesion</title>
+    <link rel="stylesheet" href="../static/css/inicio.css">
+</head>
+<body>
+    <header>
+        <div class="nom-pag">
+           <h1>ART/DEC</h1>
+        </div>
+    </header>
+    <main>
+        <br>
+        <br>
+        <br>
+        <section class="google-face-container">
+            <div class="google-face-items">
+                <div class="item-google">
+                    <label for="">
+                        <a href="https://www.google.com/">Iniciar sesion con google</a>
+                    </label>
+                    
+                </div>
+                <br>
+                <div class="item-face">
+                    <label for="">
+                        <a href="https://www.facebook.com/">Iniciar sesion con Facebook</a>
+                    </label> 
+                </div>
+            </div>
+        </section>    
+        <section class="correo-pass">
+                <form action="#" method="get">  <!--  action="" es la ruta por donde va a enviar lo que ingrese por el metodo que especifique. POST lo uso para enviar a un servidor-->
+                <div class="correo-electronico">
+                    <label for="">
+                        <p>Correo electronico</p>
+                        <input type="email" name="campo-email" id="campo-email" placeholder="Por favor ingrese su e-mail" required>
+                    </label>   
+                </div>
+                <div class="contraseña">
+                    <label for="">
+                        <p>Contraseña</p>
+                        <input type="password" name="campo-contraseña" id="campo-contraseña" placeholder="ingrese una contraseña valida" required>
+                    </label>    
+                </div>
+                <button type="submit" class="boton-inicio">Iniciar sesion</button>
+                </form>
+                <br>
+                <br>
+            </div>
+        </section>
+    </main>
+    <br>
+       
+    <section>
+        <div class="boton">
+            <button class="boton-volver">
+                <a href="../index.html" class="texto">Volver</a>
+            </button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </section>
+   
+</body>
+</html>

@@ -6,6 +6,8 @@
     <title>Registrarse</title>
     <link rel="stylesheet" href="../static/css/registro.css">
     <link rel="shortcut icon" href="./static/img/favicon.ico" type="imagen/x-icon">  <!--tengo que asegurarme que es el icono que busco-->
+    <link rel="stylesheet" href="../static/JS/boton-registro.js">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <header>
@@ -67,7 +69,11 @@
                     <label for="term-cond">Acepto os terminos y condiciones</label>
                 </div>
                 <!--<input type="submit" value="Registrarse">  este equivale a button-->
-                <button type="submit" class="boton-registro">Registrarse</button>
+                <button type="button" class="boton-registro" id="btn">
+                    Registrarse
+                    <script src="../static/JS/boton-registro.js"></script>
+                </button>   
+                <!-- <button type="submit" class="boton-registro">Registrarse</button> -->
                 </form>
             </div>
         </section>

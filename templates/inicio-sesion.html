@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de sesion</title>
     <link rel="stylesheet" href="../static/css/inicio.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <header>
@@ -46,27 +47,31 @@
                         <input type="password" name="campo-contraseña" id="campo-contraseña" placeholder="ingrese una contraseña valida" required>
                     </label>    
                 </div>
-                <button type="submit" class="boton-inicio">Iniciar sesion</button>
+                <button type="button" class="boton-inicio" id="btn">
+                    Iniciar sesion
+                    <script src="../static/JS/boton-inicio.js"></script>
+                </button>
+                
+                
                 </form>
                 <br>
                 <br>
             </div>
         </section>
     </main>
-    <br>
-       
+    <br>    
     <section>
         <div class="boton">
             <button class="boton-volver">
                 <a href="../index.html" class="texto">Volver</a>
             </button>
-        </div>
+            
+        </div> 
         <br>
         <br>
         <br>
         <br>
         <br>
-    </section>
-   
+    </section>  
 </body>
 </html>

@@ -872,7 +872,30 @@ h2{
         font-size: 3vw;
         text-align: center;
     }
-       
+    .navegacion-lateral{
+        width:  90px;
+    }
+    .menu-lateral > li > a{
+        font-size: 12px;    
+    }
+    .submenu-lateral li a{
+        font-size: 12px;
+    }
+    /***********      video     ******************/
+    .contenedor-video-central{
+        display: block;
+        margin-left: 15px;  
+    }
+    .video-iframe{
+        width: 238px;
+        height: 220px;
+    }
+    /*falta preguntar como eliminar la separacon entre video y comentario*/
+    .comentario-video{
+        font-size: 18px;
+        line-height: 30px;
+    }
+     
 }
 
 /***********************************************************version tablet*************************************************************/
@@ -1064,5 +1087,18 @@ h2{
         height: 60px; 
         font-size: 2vw;
     }
-    
+    /***********      video     ******************/
+    .contenedor-video-central{
+        display: block;
+        margin-left: 128px;  
+    }
+    .video-iframe{
+        width: 390px;
+        height: 230px;
+    }
+    /*falta preguntar como eliminar la separacon entre video y comentario*/
+    .comentario-video{
+        font-size: 21px;
+        line-height: 30px;
+    }
 }

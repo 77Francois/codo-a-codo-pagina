@@ -5,74 +5,60 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Art/dec</title>
         <link rel="stylesheet" href="./static/css/style.css">
-        
         <link rel="shortcut icon" href="./static/img/favicon.ico" type="imagen/x-icon">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/5d2e47122f.js" crossorigin="anonymous"></script>
         <!-- <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"> -->
         <script src="https://kit.fontawesome.com/90dcf58a88.js" crossorigin="anonymous"></script>  <!--icono de registro-->
     </head>
     <body>
-        <header class="cabecera">   <!--aqui va el menu de navegacion-->
+        <header class="header">   <!--aqui va el menu de navegacion-->
             <!-- <h1>Pagina de pruebas</h1> -->
-
-            <nav class="navegacion">   <!--uso el "nav" porque generalmente los menus de navegacion van en un "nav"-->
-                <a href="#" class="logo-empresa">
-                    <!--Art/dec   tengo que decidir deonde queda mejor!!!!!!!!!!!!-->
-                    <button class="logo-inicio">
+            <a href="index.html" class="header_logo">
+                <!--Art/dec   tengo que decidir deonde queda mejor!!!!!!!!!!!!-->
+                    <button class="logo_inicio">
                         <i class="fa-solid fa-paint-roller">Art/dec</i>
                     </button>
-                </a>
-                
-                <ul class="menu">  <!--en la lista creo una clase "menu"-->
-                    <li><a href="#">solapa1</a>
-                        <ul class="submenu">
-                            <li>
-                                <a href="./menu1/solapa1-1.html">subsolapa1-1</a>
-                            </li>
-                            <li>
-                                <a href="./menu1/solapa1-2.html">subsolapa1-2</a>
-                            </li>
-                            <li>
-                                <a href="./menu1/solapa1-3.html">subsolapa1-3</a>
-                            </li>
-                        </ul> 
+            </a>
+            <input type="checkbox" id="check">
+            <label for="check" class="check-btn">
+                    <i class="fa-solid fa-bars"></i>
+            </label>
+            <nav class="navegador_menu">
+                <ul class="menu__principal">
+                    <li class="menu__item">
+                        <a href="#" class="link__page">Nosotros</a>
                     </li>
-                    <li><a href="#">solapa2</a>
-                        <ul class="submenu">
-                            <li><a href="#">subsolapa2-1</a></li>
-                            <li><a href="#">subsolapa2-2</a></li>
-                            <li><a href="#">subsolapa2-3</a></li>
-                        </ul> 
+                    <li class="menu__item">
+                        <a href="#" class="link__page">Tienda</a>
                     </li>
-                    <li><a href="#">solapa3</a>
-                        <ul class="submenu">
-                            <li><a href="#">subsolapa3-1</a></li>
-                            <li><a href="#">subsolapa3-2</a></li>
-                            <li><a href="#">subsolapa3-3</a></li>
-
-                        </ul>
-                    </li>
-                    <li><a href="#">Nosotros</a>
-                        <ul class="submenu">
-                            <li><a href="./templates/nosotros-ubicacion.html">Sucursales</a></li>
-                            <li><a href="#">subsolapa4-2</a></li>
-                            <li><a href="#">subsolapa4-3</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="./templates/inicio-sesion.html" target="_blank" class="boton-de-inicio">
-                            <i class="fa-solid fa-right-to-bracket"></i>
-                            <span class="texto-del-inicio">Iniciar sesion</span>
-                        </a>
-                        <a href="./templates/registro.html" target="_blank" class="boton-de-registro">
-                            <!-- <i class="fa-light fa-user"></i> -->
-                            <i class="fa-solid fa-user"></i>  
-                            <span class="texto-del-inicio">Registrarse</span>
-                        </a>
+                    <li class="menu__item">
+                        <a href="./templates/nosotros-ubicacion.html" class="link__page">Sucursales</a>
                     </li>
                 </ul>
+                <div class="botones">
+                    <ul class="botones_menu">
+                        <li class="menu-btn">
+                            <a href="./templates/inicio-sesion.html" target="_blank" class="link__page">
+                                <button class="inicio-btn">
+                                    <i class="fa-solid fa-right-to-bracket"></i>
+                                        <span class="texto__inicio">Iniciar sesion</span>
+                                </button>
+                            </a>
+                        </li>
+                        <li class="menu-btn">
+                            <a href="./templates/registro.html" target="_blank" class="link__page">
+                                <button class="registro-btn">
+                                    <i class="fa-solid fa-user"></i>  
+                                        <span class="texto__inicio">Registrarse</span>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
+
         <br id="ar">
         <br>
         <br>
@@ -95,8 +81,7 @@
                             </ul>
                         </li>
     
-                    </ul>
-                    
+                    </ul>     
                 </nav> 
             </div>
             <div class="contenedor-video-central">

@@ -99,8 +99,23 @@ label {
     border-radius: 4px;
     padding: 7px;
     width: 350px;
+    cursor: pointer;
 }
-
+/****************************************** Estilo personalizado para el icono de sweetAlert2 ********************************************************/
+.swal2-icon{
+    width: 68px !important;
+    height: 28px !important; 
+}
+.swal2-title{
+    margin-top: 10px !important;
+    color: red !important;
+    font-size: 28px !important;
+}
+.swal2-popup {
+    width: 300px !important; /* Ancho para la ventana */
+    font-size: 15px;
+}
+/********************************************************************************************************************/
 .boton {
     display: block;
     width: 100%;
@@ -151,6 +166,18 @@ label {
         margin-left: 135px;
         font-size: 18px;
     }
+
+    .swal2-title{
+        margin-top: 20px !important;
+        color: red !important;
+        font-size: 18px !important;
+    }
+    .swal2-popup {
+        width: 150px !important; /* Ancho para la ventana */
+        height: 250px;
+        font-size: 8px !important;
+    }
+
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) { 
     .google-face-container {

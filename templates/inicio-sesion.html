@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de sesion</title>
     <link rel="stylesheet" href="../static/css/inicio.css">
+    <link rel="stylesheet" href="../static/css/boton-inicio.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 </head>
 <body>
     <header>
@@ -51,9 +53,12 @@
                         <input type="password" name="campo-contraseña" id="campo-contraseña" placeholder="ingrese una contraseña valida" required>
                     </label>    
                 </div>
-                <button type="button" class="boton-inicio" id="btn">
+                <button type="button" class="boton-inicio" id="btn" onclick="showAlert()">
                     Iniciar sesion
                     <script src="../static/JS/boton-inicio.js"></script>
+                    <script src="sweetalert2.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                    
                 </button>
                 
                 

@@ -1,15 +1,10 @@
-let btnsend = document.querySelector("#btn");
-
-btnsend.addEventListener('click',function(){
+function showAlert(){
   Swal.fire({
-      position: "top-end",
-      icon: "success",
-      title: "Inicio de sesion exitoso",
-      showConfirmButton: false,
-      timer: 1500
-    });
-
-})
-
-
-        
+    position: 'top-end',
+    icon: 'success',
+    iconColor: 'rgb(23, 67, 50)',
+    title: 'Excelente!',
+    text: 'Se inicio sesion exitosamente!!!',
+    timer: 15000,
+  })
+}

@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de sesion</title>
     <link rel="stylesheet" href="../static/css/inicio.css">
+    <link rel="stylesheet" href="../static/css/boton-inicio.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 </head>
 <body>
     <header>
@@ -21,57 +23,64 @@
             <div class="google-face-items">
                 <div class="item-google">
                     <label for="">
-                        <a href="https://www.google.com/">Iniciar sesion con google</a>
+                        <a class="ini-google" href="https://www.google.com/">
+                            Iniciar sesion con google
+                        </a>
                     </label>
                     
                 </div>
                 <br>
                 <div class="item-face">
                     <label for="">
-                        <a href="https://www.facebook.com/">Iniciar sesion con Facebook</a>
+                        <a class="ini-face" href="https://www.facebook.com/">
+                            Iniciar sesion con Facebook
+                        </a>
                     </label> 
                 </div>
             </div>
         </section>    
         <section class="correo-pass">
-                <form action="#" method="get">  <!--  action="" es la ruta por donde va a enviar lo que ingrese por el metodo que especifique. POST lo uso para enviar a un servidor-->
-                <div class="correo-electronico">
-                    <label for="">
-                        <p>Correo electronico</p>
-                        <input type="email" name="campo-email" id="campo-email" placeholder="Por favor ingrese su e-mail" required>
-                    </label>   
-                </div>
-                <div class="contraseña">
-                    <label for="">
-                        <p>Contraseña</p>
-                        <input type="password" name="campo-contraseña" id="campo-contraseña" placeholder="ingrese una contraseña valida" required>
-                    </label>    
-                </div>
-                <button type="button" class="boton-inicio" id="btn">
-                    Iniciar sesion
-                    <script src="../static/JS/boton-inicio.js"></script>
-                </button>
-                
-                
+                <form action="#" id="formInicio" method="get" novalidate>  <!--  action="" es la ruta por donde va a enviar lo que ingrese por el metodo que especifique. POST lo uso para enviar a un servidor-->
+                    <div class="correo-electronico">
+                        <label for="">
+                            <p>Correo electronico</p>
+                            <input type="email"  required name="campo-email" id="campo-email" placeholder="Por favor ingrese su e-mail">
+                        </label>
+                        <div class="error" id="error-email"></div>   
+                    </div>
+                    <div class="contraseña">
+                        <label for="">
+                            <p class="text-contraseña">Contraseña</p>
+                            <input type="password"  required name="campo-contraseña" id="campo-contraseña" placeholder="ingrese una contraseña valida">
+                        </label>
+                        <div class="error" id="error-password"></div>    
+                    </div>
+                    <button type="submit" class="boton-inicio" id="btn-inicio">
+                        Iniciar sesion    
+                    </button>
                 </form>
                 <br>
                 <br>
             </div>
         </section>
     </main>
+    <script src="../static/JS/boton-inicio.js"></script>
+    <script src="sweetalert2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
     <br>    
     <section>
         <div class="boton">
             <button class="boton-volver">
                 <a href="../index.html" class="texto">Volver</a>
             </button>
-            
+    
         </div> 
         <br>
         <br>
         <br>
         <br>
         <br>
-    </section>  
+    </section> 
+    
 </body>
 </html>

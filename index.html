@@ -14,45 +14,47 @@
     <body>
         <header class="header">   <!--aqui va el menu de navegacion-->
             <!-- <h1>Pagina de pruebas</h1> -->
-            <a href="index.html" class="header_logo">
+            <div class="header_logo">
+            <a href="index.html" class="logo_inicio">
                 <!--Art/dec   tengo que decidir deonde queda mejor!!!!!!!!!!!!-->
-                    <button class="logo_inicio">
-                        <i class="fa-solid fa-paint-roller">Art/dec</i>
-                    </button>
-            </a>
+                        <i class="fa-solid fa-paint-roller">
+                            <span class="texto_logo">Art/dec</span>
+                        </i>
+                    </a>
+            </div>
             <input type="checkbox" id="check">
-            <label for="check" class="check-btn">
+            <label for="check" class="check_btn">
                     <i class="fa-solid fa-bars"></i>
             </label>
             <nav class="navegador_menu">
-                <ul class="menu__principal">
-                    <li class="menu__item">
-                        <a href="#" class="link__page">Nosotros</a>
+                <ul class="menu_principal">
+                    <li class="menu_item">
+                        <a href="#" class="link_page">Quiénes somos</a>
                     </li>
-                    <li class="menu__item">
-                        <a href="#" class="link__page">Tienda</a>
+                    <li class="menu_item">
+                        <a href="#" class="link_page">Tienda</a>
                     </li>
-                    <li class="menu__item">
-                        <a href="./templates/nosotros-ubicacion.html" class="link__page">Sucursales</a>
+                    <li class="menu_item">
+                        <a href="./templates/nosotros-ubicacion.html" class="link_page">Sucursales</a>
                     </li>
                 </ul>
                 <div class="botones">
                     <ul class="botones_menu">
-                        <li class="menu-btn">
-                            <a href="./templates/inicio-sesion.html" target="_blank" class="link__page">
-                                <button class="inicio-btn">
-                                    <i class="fa-solid fa-right-to-bracket"></i>
-                                        <span class="texto__inicio">Iniciar sesion</span>
-                                </button>
-                            </a>
+                        <li class="menu__btn">
+                            <div class="btn">
+                                <a href="./templates/inicio-sesion.html" target="_blank" class="link_page">
+                                    <i class="fa-solid fa-right-to-bracket" id="inicio_btn"></i>
+                                        <span class="texto_inicio">Iniciar sesion</span>
+                                </a>
+                            </div>
                         </li>
-                        <li class="menu-btn">
-                            <a href="./templates/registro.html" target="_blank" class="link__page">
-                                <button class="registro-btn">
-                                    <i class="fa-solid fa-user"></i>  
-                                        <span class="texto__inicio">Registrarse</span>
-                                </button>
-                            </a>
+                        <li class="menu__btn">
+                            <div class="btn">
+                                <a href="./templates/registro.html" target="_blank" class="link_page">
+                                    <i class="fa-solid fa-user" id="registro_btn"></i>  
+                                        <span class="texto_inicio">Registrarse</span>
+                                </a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -514,7 +516,35 @@
     </div>
     <script src="boton-arriba.js"></script>
     </body>
-    <footer class="pie-de-pagina">
-        <h1>PIE DE PAGINA</h1>
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer_row">
+                <div class="footer_link">
+                    <h4>Compañía</h4>
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Politica de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer_link">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Preguntas</a></li>
+                        <li><a href="#">Compras</a></li>
+                        <li><a href="#">Envíos</a></li>
+                    </ul>
+                </div>
+                <div class="footer_link">
+                    <h4>Seguinos</h4>
+                    <div class="redes_link">
+                        <a href="#" class="facebook_icono"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="instagram_icono"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="twitter_icono"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="linkedin_icono"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 </html>

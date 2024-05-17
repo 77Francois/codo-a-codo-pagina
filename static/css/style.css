@@ -13,7 +13,9 @@ body {
     overflow-x: hidden;
 }
 
-header {
+/*************************HEADER*******************/
+
+.header {
     background-color:rgb(148, 128, 128);
     height: 80px;
     position: fixed;
@@ -31,17 +33,15 @@ header {
     color: rgb(190, 72, 17);
     font-weight: bold;
     line-height: 10px;  /*me centro el logo porque le di el tamaño del navegador*/
-    text-decoration: none;
+    background: none;
+    border: none;
 }
 
 .logo_inicio {
     height: 40px;    
-    background: none;
     color: rgb(190, 72, 17);
-    border: none;
     font-size: 20px;
     cursor: pointer;
-    -webkit-transition: font-size 1s ease;
     transition: font-size 1s ease;
 }
 
@@ -56,45 +56,43 @@ header {
     align-items: center;
 }
 
-.menu__principal, .botones {
-    float: right;
+header nav ul, .botones {
     margin-right: 20px;
     max-height: 0;
-    transition: max-height .2s ease-out;
 }
 
-.menu__item, .menu-btn {
+.menu_item, .menu__btn {
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
+    position: relative;
 }
 
-.link__page {
+
+.link_page {
     color: #000;
     font-size: 18px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    -webkit-transition: 1s linear;
-    transition: 1s linear;
+    padding: 5px;
 }
+
+.texto_inicio {
+    font-size: 16px;
+}
+
 
 li a:hover {
     opacity: 0.3;
 }
 
-.inicio-btn, .registro-btn {
-    background:none;
+.btn {
+    background: none;
     border: none;
-    font-size: 15px;
     cursor: pointer;
 }
 
-.check-btn {
+.check_btn {
     font-size: 30px;
-    color: #181818;
-    float: right;
     line-height: 80px;
-    margin-right: 40px;
     cursor: pointer;
     display: none;
 }
@@ -103,58 +101,54 @@ li a:hover {
     display: none;
 }
 
-/* responsive para tablet*/
+/************** responsive para tablet***********/
 @media (max-width: 952px) {
     .header_logo {
-        padding-left: 20px;
+        padding-left: 10px;
     }
-    .link__page {
+    .link_page {
         font-size: 16px;
     }
 
-    .texto__inicio {
+    .texto_inicio {
         font-size: 13px;
     }
 }
 
-/* responsive para celular*/
+/*********** responsive para celular************/
 @media (max-width: 858px) {
-    .check-btn {
+    .check_btn {
         display: block;
         font-size: 20px;
+        padding-top: 10px;
         position: relative;
+        margin-left: 20px;
     }
 
-    .menu__principal {
+    nav .menu_principal {
+        background: rgb(177, 158, 158);
         position: fixed;
         width: 100%;
-        height: 100vh;
-        background: #c1baba;
         top: 80px;
         left: -100%;
         text-align: center;
         transition: all .5s;
+        max-height: 20vh;
+        padding-left: 50px;
     }
 
-    .texto__inicio {
+    header .texto_inicio {
         display: none;
     }
 
-    .menu__item {
+    header nav .menu_principal .menu_item {
         display: block;
-        margin: 50px 0;
-        line-height: 30px;
+        margin: 30px 0;
+        line-height: 0;
     }
-    nav ul li a {
-        font-size: 20px;
-    }
-    li a.hover {
-        background: none;
-        color: rgb(87, 85, 85);
-    }
-    #check:checked ~ ul {
-        left: 0;
 
+    #check:checked ~ nav .menu_principal {
+        left: 0;
     }
 }
 
@@ -703,3 +697,128 @@ termina sombreado. No funciono, quedo horrible*/
     background-position: center;
     opacity: 0.3;
 }*/
+
+
+/*************************FOOTER*********************************/
+
+.footer_container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: #000;
+    padding: 80px 0;
+}
+
+.footer_row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_link {
+    width: 25%;
+    margin-left: 40px;
+    padding: 0 15px;
+}
+
+.footer_link h4 {
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #176fa1;
+    padding-bottom: 10px;
+    display: inline-block;
+    transition: font-size 1s;
+} 
+
+.footer_link h4:hover {
+    font-size: 30px;
+}
+
+.footer_link ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(167, 176, 184);
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer_link ul li a:hover {
+    color: #c1baba;
+    padding-left: 6px;
+}
+
+.redes_link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.redes_link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgb(167, 176, 184);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    color: #fff;
+    transition: all .5s ease;
+}
+
+
+.redes_link a:hover {
+    background-color: #54b0e5;
+}
+
+
+/******responsive para tablet**************/
+@media (max-width: 958px) {
+    .footer {
+        padding: 40px;
+        display: block;
+    }
+    .footer_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .redes_link {
+        padding: 3px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_link {
+        padding-right: 30px;
+    }
+}
+/******responsive para celular**************/
+@media (max-width: 858px) {
+    .footer_row {
+        text-align: center;
+    }
+
+    .footer_link {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer_link h4, .footer_link ul li a {
+        font-size: 15px;
+    }
+
+    .footer_link h4:hover {
+        font-size: 20px;
+    }
+
+    .redes_link {
+        display: block;
+    }
+}

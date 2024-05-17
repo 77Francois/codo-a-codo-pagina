@@ -92,10 +92,7 @@ label {
     color: black;
     text-decoration: none;
 }
-.error{
-    color:red;
-    font-size: 12px;
-}
+
 @media screen and (max-width: 767px) {
     .reg-container {
         width: 300px;

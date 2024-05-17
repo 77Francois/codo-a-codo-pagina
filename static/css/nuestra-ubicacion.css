@@ -41,11 +41,88 @@ h1 {
     margin-left: 650px;
     font-size: 21px;
     background: rgb(46, 7, 46);
-    border-radius: 3px;
-     
+    border-radius: 3px;    
 }
 .texto {
     padding: 7px;
     color: white;
     text-decoration: none;
+}
+
+@media screen and (max-width: 767px){
+    h1 {
+        padding-top: 7px;
+    }
+    .bar-superior {
+        height: 50px;   
+    }
+    .map-titulo{
+        font-size: 15px;
+    }
+    .map {
+        margin-left: 20px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+    .map-iframe{
+        width: 273px;
+        height: 220px;
+    }
+    .ubic {
+        flex-direction: column;
+    }
+    .container-suc {
+        margin-left: 25px;
+        margin-top: 0px;
+        padding-bottom: 10px;
+    }
+    .container-medios-transporte {
+        display: block;
+        margin-left: 20px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    #venis{
+        font-size: 15px;
+    }
+    .boton-volver {
+        margin-left: 140px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+   
+    .map-titulo{
+        font-size: 23px;
+    }
+    .map {
+        margin-left: 20px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+    .map-iframe{
+        width: 340px;
+        height: 320px;
+    }
+    
+    .container-suc {
+        margin-left: 85px;
+        margin-top: 110px;
+        
+    }
+    .container-medios-transporte {
+        display: block;
+        margin-left: 20px;
+        align-items: center;
+        margin-left: 255px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    #venis{
+        font-size: 15px;
+    }
+    .boton-volver {
+        margin-left: 395px;
+    }
 }

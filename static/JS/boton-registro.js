@@ -24,6 +24,7 @@ document.getElementById("formRegister").addEventListener("submit", function(even
 
   if (!usuario.value) {
       document.getElementById("campo-usuario").nextElementSibling.textContent = "Por favor, ingrese su usuario";
+        alert('Por favor, ingrese su usuario');
       valid = false;
   }
   if (!nombre.value) {

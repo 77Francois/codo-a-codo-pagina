@@ -4,140 +4,152 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
-body{
+
+body {
     background: #52313c;
-    /*font-family: sans-serif; es para todos pero prefiero separarlo por ahora*/
-    padding: 70px 5px 0;
+    overflow-x: hidden;
 }
 
-.texto-del-inicio{
-    color: #fff;
-    padding: 5px;
-    
-    border-radius: 6px;
-    font-size: 10px;
+/*************************HEADER*******************/
 
- 
-}
-.cabecera{
+.header {
     background-color:rgb(148, 128, 128);
     height: 80px;
     position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    top: 0;
-    left: 0;
-
+    z-index: 100;
+    overflow: hidden;
 }
 
-.navegacion{
+.header_logo {
+    display: block;
+    padding: 20px;
+    color: rgb(190, 72, 17);
+    font-weight: bold;
+    line-height: 10px;  /*me centro el logo porque le di el tamaño del navegador*/
+    background: none;
+    border: none;
+}
+
+.logo_inicio {
+    height: 40px;    
+    color: rgb(190, 72, 17);
+    font-size: 20px;
+    cursor: pointer;
+    transition: font-size 1s ease;
+}
+
+.logo_inicio:hover {
+    font-size: 25px;
+}
+
+.navegador_menu {
+    padding-bottom: 80px;
     display: flex;
-    justify-content: space-between;    
-    /*width: 650px; */ 
-    /*max-width: 992px;  este maximo me empujaba la mitad del boton de inicio para abajo*/  
-    margin: 30 auto; /*"auto" es para que se centre en la pagina*/
-    flex-direction: row;
-    flex-wrap: nowrap;
-    
-    
+    justify-content: space-between;
+    align-items: center;
 }
 
-.menu{
+header nav ul, .botones {
+    margin-right: 20px;
+    max-height: 0;
+}
+
+.menu_item, .menu__btn {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
     position: relative;
-    /*display: inline-block;*/
-    display: flex;
-    list-style: none;
-    margin-right: 40px; /*separo las solapas 40px de la derecha porque el logo lo corri 40px a la izquierda*/
-
 }
 
-.menu > li > a{  /*para darle estilo a los enlaces "solapas1,2,3,4"*/
-    
-    /*padding: 15px 20px;  rellenos de 15px arriba y abajo y 20px a los costados*/
-    color: black;
-    /*font-family: sans-serif;*/
+
+.link_page {
+    color: #000;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.texto_inicio {
     font-size: 16px;
-    width: max-content;
-    text-decoration: none;  /*saco el subrayado*/   
-    line-height: 80px; 
-    margin: 0 40px;  /*arriba/abajo nada porque ya esta centrado y los separo 25*/
-    text-transform: uppercase;  /*todo en mayuscula*/
-    padding: 8px 12px;    
 }
-.menu ul ul {
+
+
+li a:hover {
+    opacity: 0.3;
+}
+
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.check_btn {
+    font-size: 30px;
+    line-height: 80px;
+    cursor: pointer;
     display: none;
 }
 
-.menu li:nth-last-child(-n+1) a{
-    display: block;
-    line-height: 20px;
-    margin: 2px
-    ;
+#check {
+    display: none;
 }
 
-.logo-empresa{
-    color: rgb(190, 72, 17);
-    font-size: 25px;
-    font-weight: bold;
-    padding: 0 40px; /*le doy 0 para arriba/abajo y 40 derecha/izquierda */
-    line-height: 80px;  /*me centro el logo porque le di el tamaño del navegador*/
-    text-decoration: none;
-    
-}
-.logo-inicio {   
-    background: none;
-    color: rgb(190, 72, 17);
-    border: none;
-    font-size: 25px;
-    padding: 0 20px;
-    line-height: 60px;
-    
-    
-}
-/******PRUEBA*******/
-.menu > li > a:hover{   /*de esta forma solo me paro sobre los menu "solapa" pero no sobre sus submenus*/
-    background-color: rgb(44, 43, 43);
-    color: white;
-    /*transform: scale(1.3);*/
-   
-    border-radius: 5px;
-    transition: all .3s;
-}
-.menu ul li:hover ul {
-    display: flex;
-    flex-direction: column;
+/************** responsive para tablet***********/
+@media (max-width: 952px) {
+    .header_logo {
+        padding-left: 10px;
+    }
+    .link_page {
+        font-size: 16px;
+    }
 
+    .texto_inicio {
+        font-size: 13px;
+    }
 }
 
-/************************************** submenu****************************************************************************/
-.submenu{
-    position: absolute;
-    background: #333333;
-    
-    /*width: 120%;   solo lo uso si la palabra del "submenu" supera el tamaño del "menu" del que viene*/  
-    /*display: none;  es para que los submenus no aparezcan*/
-    visibility: hidden;  /*este reeemplaza al "display" para poder darle un efecto*/
-    opacity: 0;
-    transition: opacity 1s;
-    list-style: none;
-   
-}
+/*********** responsive para celular************/
+@media (max-width: 858px) {
+    .check_btn {
+        display: block;
+        font-size: 20px;
+        padding-top: 10px;
+        position: relative;
+        margin-left: 20px;
+    }
 
-.submenu li a{
-    display: flex; 
-    flex-direction: column;
-    padding: 15px;   /*les dio 15px a todos los lado*/
-    color: white;  /*las letras son blancas ahora*/
-    text-decoration: none;  /*saco el subrayado*/
-    border: 1px solid black;  /*recarca los bordes de cada caja subsolapa*/
-    border-radius: 6px;
-    transition: all 0s;
-}
-.menu li:hover .submenu{
-    
-    visibility: visible;  /*este reeemplaza al "display" para poder darle un efecto*/
-    opacity: 1;   
+    nav .menu_principal {
+        background: rgb(177, 158, 158);
+        position: fixed;
+        width: 100%;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        max-height: 20vh;
+        padding-left: 50px;
+    }
 
+    header .texto_inicio {
+        display: none;
+    }
+
+    header nav .menu_principal .menu_item {
+        display: block;
+        margin: 30px 0;
+        line-height: 0;
+    }
+
+    #check:checked ~ nav .menu_principal {
+        left: 0;
+    }
 }
 
 /*********************************************************menu lateral**********************************************/
@@ -786,6 +798,45 @@ h2{
         text-align: center;
     }
 
+}
+
+/*
+@media (min-width: 700px) {
+    .navegacion {
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+}
+*/
+/*
+@media (min-width: 700px) {
+    .menu__inner {
+        margin-inline-start: .5rem;
+    }
+}
+*/
+/*intentamos sombrear 
+.contenedor{
+    position: relative;
+    display: inline-block;
+}
+.contenedor img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.contenedor::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+termina sombreado. No funciono, quedo horrible*/
+
     /********************************seccion de baño responsive******************************************************/
     .title-baño {
         height: 30px;
@@ -1105,5 +1156,145 @@ h2{
     .comentario-video{
         font-size: 21px;
         line-height: 30px;
+    }
+}
+
+.fondo-jardin{
+    height: 700px;
+    background-image: url("../static/img/imagen-jardin.jpg");
+    background-size: contain;
+    background-position: center;
+    opacity: 0.3;
+}
+.fondo-terraza{
+    height: 700px;
+    background-image: url("../static/img/imagen-terraza.jpg");
+    background-size: contain;
+    background-position: center;
+    opacity: 0.3;
+}*/
+
+
+/*************************FOOTER*********************************/
+
+.footer_container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: #000;
+    padding: 80px 0;
+}
+
+.footer_row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_link {
+    width: 25%;
+    margin-left: 40px;
+    padding: 0 15px;
+}
+
+.footer_link h4 {
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #176fa1;
+    padding-bottom: 10px;
+    display: inline-block;
+    transition: font-size 1s;
+} 
+
+.footer_link h4:hover {
+    font-size: 30px;
+}
+
+.footer_link ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(167, 176, 184);
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer_link ul li a:hover {
+    color: #c1baba;
+    padding-left: 6px;
+}
+
+.redes_link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.redes_link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgb(167, 176, 184);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    color: #fff;
+    transition: all .5s ease;
+}
+
+
+.redes_link a:hover {
+    background-color: #54b0e5;
+}
+
+
+/******responsive para tablet**************/
+@media (max-width: 958px) {
+    .footer {
+        padding: 40px;
+        display: block;
+    }
+    .footer_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .redes_link {
+        padding: 3px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_link {
+        padding-right: 30px;
+    }
+}
+/******responsive para celular**************/
+@media (max-width: 858px) {
+    .footer_row {
+        text-align: center;
+    }
+
+    .footer_link {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer_link h4, .footer_link ul li a {
+        font-size: 15px;
+    }
+
+    .footer_link h4:hover {
+        font-size: 20px;
+    }
+
+    .redes_link {
+        display: block;
     }
 }

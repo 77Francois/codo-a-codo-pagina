@@ -1,5 +1,5 @@
 document.getElementById("formRegister").addEventListener("submit", function(event) {
-  event.preventDefault(); // Evita que se envíe el formulario inmediatamente
+  event.preventDefault(); // Evito que se envíe el formulario inmediatamente
 
   // Seleccionar todos los campos
   var usuario = document.getElementById("campo-usuario");
@@ -23,8 +23,7 @@ document.getElementById("formRegister").addEventListener("submit", function(even
   var valid = true;
 
   if (!usuario.value) {
-      document.getElementById("campo-usuario").nextElementSibling.textContent = "Por favor, ingrese su usuario";
-        alert('Por favor, ingrese su usuario');
+      document.getElementById("campo-usuario").nextElementSibling.textContent = "Por favor, ingrese su usuario";   //no aparece como quiero
       valid = false;
   }
   if (!nombre.value) {

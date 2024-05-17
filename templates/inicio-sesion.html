@@ -40,47 +40,47 @@
             </div>
         </section>    
         <section class="correo-pass">
-                <form action="#" method="get">  <!--  action="" es la ruta por donde va a enviar lo que ingrese por el metodo que especifique. POST lo uso para enviar a un servidor-->
-                <div class="correo-electronico">
-                    <label for="">
-                        <p>Correo electronico</p>
-                        <input type="email" name="campo-email" id="campo-email" placeholder="Por favor ingrese su e-mail" required>
-                    </label>   
-                </div>
-                <div class="contraseña">
-                    <label for="">
-                        <p>Contraseña</p>
-                        <input type="password" name="campo-contraseña" id="campo-contraseña" placeholder="ingrese una contraseña valida" required>
-                    </label>    
-                </div>
-                <button type="button" class="boton-inicio" id="btn" onclick="showAlert()">
-                    Iniciar sesion
-                    <script src="../static/JS/boton-inicio.js"></script>
-                    <script src="sweetalert2.min.js"></script>
-                    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-                    
-                </button>
-                
-                
+                <form action="#" id="formInicio" method="get" novalidate>  <!--  action="" es la ruta por donde va a enviar lo que ingrese por el metodo que especifique. POST lo uso para enviar a un servidor-->
+                    <div class="correo-electronico">
+                        <label for="">
+                            <p>Correo electronico</p>
+                            <input type="email"  required name="campo-email" id="campo-email" placeholder="Por favor ingrese su e-mail">
+                        </label>
+                        <div class="error" id="error-email"></div>   
+                    </div>
+                    <div class="contraseña">
+                        <label for="">
+                            <p>Contraseña</p>
+                            <input type="password"  required name="campo-contraseña" id="campo-contraseña" placeholder="ingrese una contraseña valida">
+                        </label>
+                        <div class="error" id="error-password"></div>    
+                    </div>
+                    <button type="submit" class="boton-inicio" id="btn-inicio">
+                        Iniciar sesion    
+                    </button>
                 </form>
                 <br>
                 <br>
             </div>
         </section>
     </main>
+    <script src="../static/JS/boton-inicio.js"></script>
+    <script src="sweetalert2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
     <br>    
     <section>
         <div class="boton">
             <button class="boton-volver">
                 <a href="../index.html" class="texto">Volver</a>
             </button>
-            
+    
         </div> 
         <br>
         <br>
         <br>
         <br>
         <br>
-    </section>  
+    </section> 
+    
 </body>
 </html>

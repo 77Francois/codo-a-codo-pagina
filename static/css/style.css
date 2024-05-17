@@ -330,7 +330,7 @@ h2{
     width: 100%;
     color: black;
     font: message-box;
-
+    text-align: center;
 }
 /******************************************************************* imagenes y fondo comedor***************************************************/
 .title-comedor{
@@ -380,7 +380,7 @@ h2{
     width: 100%;
     color: black;
     font: message-box;
-
+    text-align: center;
 }
 /********************************************************** imagenes y fondo living****************************************************/
 
@@ -429,6 +429,7 @@ h2{
     width: 100%;
     color: black;
     font: message-box;
+    text-align: center;
 }
 /************************************************** imagenes y fondo dormitorio**************************************************/
 
@@ -479,6 +480,7 @@ h2{
     width: 100%;
     color: black;
     font: message-box;
+    text-align: center;
 }
 /************************************************************ imagenes y fondo de baño*********************************************************/
 
@@ -529,6 +531,7 @@ h2{
     width: 100%;
     color: black;
     font: message-box;
+    text-align: center;
 }
 
 /******************************************** imagenes y fondo jardin*************/
@@ -577,6 +580,7 @@ h2{
     width: 100%;
     color: black;
     font: message-box;
+    text-align: center;
 }
 /************************************************************ imagenes y fondo terrazas*****************************************************/
 
@@ -627,6 +631,7 @@ h2{
     width: 100%;
     color: black;
     font: message-box;
+    text-align: center;
 }
 /*************************************************************pie de pagina****************************************************************/
 .pie-de-pagina{

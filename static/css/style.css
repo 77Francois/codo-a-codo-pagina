@@ -798,7 +798,6 @@ h2{
         text-align: center;
     }
 
-}
 
 /*
 @media (min-width: 700px) {
@@ -938,10 +937,12 @@ termina sombreado. No funciono, quedo horrible*/
         font-size: 12px;
     }
     /***********      video     ******************/
-    .contenedor-video-central{
+   .contenedor-video-central{
         display: block;
         margin-left: 15px;  
     }
+
+
     .video-iframe{
         width: 238px;
         height: 220px;
@@ -951,7 +952,7 @@ termina sombreado. No funciono, quedo horrible*/
         font-size: 18px;
         line-height: 30px;
     }
-     
+   
 }
 
 /***********************************************************version tablet*************************************************************/
@@ -1158,21 +1159,22 @@ termina sombreado. No funciono, quedo horrible*/
         line-height: 30px;
     }
 }
-
-.fondo-jardin{
-    height: 700px;
-    background-image: url("../static/img/imagen-jardin.jpg");
-    background-size: contain;
-    background-position: center;
-    opacity: 0.3;
-}
-.fondo-terraza{
-    height: 700px;
-    background-image: url("../static/img/imagen-terraza.jpg");
-    background-size: contain;
-    background-position: center;
-    opacity: 0.3;
-}*/
+/*
+    .fondo-jardin{
+        height: 700px;
+        background-image: url("../static/img/imagen-jardin.jpg");
+        background-size: contain;
+        background-position: center;
+        opacity: 0.3;
+    }
+    .fondo-terraza{
+        height: 700px;
+        background-image: url("../static/img/imagen-terraza.jpg");
+        background-size: contain;
+        background-position: center;
+        opacity: 0.3;
+    }
+*/
 
 
 /*************************FOOTER*********************************/

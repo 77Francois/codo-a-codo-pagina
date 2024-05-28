@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background: #ffffff;
+    overflow-x: hidden;
+    font-size: 1.6em;
+    line-height: 1.5;
+}
+
+/*************************HEADER*******************/
+
+.header {
+    background-color:rgb(255, 255, 255);
+    height: 80px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.header_logo {
+    display: block;
+    padding: 20px;
+    font-weight: bold;
+    line-height: 10px;  /*me centro el logo porque le di el tamaño del navegador*/
+    background: none;
+    border: none;
+}
+
+.logo_inicio {
+    height: 40px;    
+    color: rgb(213, 147, 116);
+    font-size: 20px;
+    cursor: pointer;
+    transition: font-size 1s ease;
+}
+
+.logo_inicio:hover {
+    font-size: 25px;
+}
+
+.navegador_menu {
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul, .botones {
+    margin-right: 20px;
+    max-height: 0;
+}
+
+.menu_item, .menu__btn {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    position: relative;
+}
+
+
+.link_page {
+    color: #000;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.texto_inicio {
+    font-size: 16px;
+}
+
+
+li a:hover {
+    opacity: 0.3;
+}
+
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.check_btn {
+    font-size: 30px;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/************** responsive para tablet***********/
+@media (max-width: 952px) {
+    .header_logo {
+        padding-left: 10px;
+    }
+    .link_page {
+        font-size: 16px;
+    }
+
+    .texto_inicio {
+        font-size: 13px;
+    }
+}
+
+/*********** responsive para celular************/
+@media (max-width: 858px) {
+    .check_btn {
+        display: block;
+        font-size: 20px;
+        padding-top: 10px;
+        position: relative;
+        margin-left: 20px; 
+    }
+
+    nav .menu_principal {
+        background: rgb(177, 158, 158);
+        position: fixed;
+        width: 100%;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        max-height: 20vh;
+        padding-left: 50px;
+    }
+
+    header .texto_inicio {
+        display: none;
+    }
+
+    header nav .menu_principal .menu_item {
+        display: block;
+        margin: 30px 0;
+        line-height: 0;
+    }
+
+    #check:checked ~ nav .menu_principal {
+        left: 0;
+    }
+}
+
+/****************MAIN SECTION***********************/
+
+
+.main_container {
+    padding: 80px 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+.inner_container {
+    padding: 80px 15px;
+    margin: auto;
+    text-align: left;
+}
+.inside_container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.main_text {
+    flex: 0 0 50%;
+    text-align: left;
+    margin-left: 10px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+    font-weight: 545;
+}
+
+.main_title {
+    position: relative;
+    margin-bottom: 6px;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.color_doodle {
+    background-image: url(https://images.app.goo.gl/qtp8rVKiuHpXaaRs6);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 170px;
+}
+
+.text_container {
+    font-size: 1.4rem;
+}
+
+.log_btn {
+    margin-top: 40px;
+    color: #000000;
+    background-color: #8585d6;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+
+.btn_text {
+    position: relative;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 5px 24px;
+    cursor: pointer;
+}
+
+.picture_container {
+    flex: 0 0 40%;
+}
+
+.about_image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/*************************FOOTER*********************************/
+
+.footer_container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: #676565;
+    padding: 80px 0;
+}
+
+.footer_row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_link {
+    width: 25%;
+    margin-left: 40px;
+    padding: 0 15px;
+}
+
+.footer_link h4 {
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #c74bd2;
+    padding-bottom: 10px;
+    display: inline-block;
+    transition: font-size 1s;
+} 
+
+.footer_link h4:hover {
+    font-size: 30px;
+}
+
+.footer_link ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(167, 176, 184);
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer_link ul li a:hover {
+    color: #c1baba;
+    padding-left: 6px;
+}
+
+.redes_link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.redes_link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgb(167, 176, 184);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    color: #fff;
+    transition: all .5s ease;
+}
+
+
+.redes_link a:hover {
+    background-color: #c960c7;
+}
+
+
+/******responsive para tablet**************/
+@media (max-width: 958px) {
+    .footer {
+        padding: 40px;
+        display: block;
+    }
+    .footer_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .redes_link {
+        padding: 3px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_link {
+        padding-right: 30px;
+    }
+}
+/******responsive para celular**************/
+@media (max-width: 858px) {
+    .footer_row {
+        text-align: center;
+    }
+
+    .footer_link {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer_link h4, .footer_link ul li a {
+        font-size: 15px;
+    }
+
+    .footer_link h4:hover {
+        font-size: 20px;
+    }
+
+    .redes_link {
+        display: block;
+    }
+}

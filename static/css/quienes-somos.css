@@ -253,8 +253,8 @@ p {
 }
 
 .footer {
-    background-color: #676565;
-    padding: 80px 0;
+    background-color: #999;
+    padding: 40px 0;
 }
 
 .footer_row {
@@ -265,16 +265,16 @@ p {
 .footer_link {
     width: 25%;
     margin-left: 40px;
-    padding: 0 15px;
+    padding: 0 10px;
 }
 
 .footer_link h4 {
     font-size: 25px;
     color: #fff;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     font-weight: 500;
     border-bottom: 2px solid #c74bd2;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     display: inline-block;
     transition: font-size 1s;
 } 
@@ -286,9 +286,9 @@ p {
 .footer_link ul li a {
     font-size: 20px;
     text-decoration: none;
-    color: rgb(167, 176, 184);
+    color: rgb(242, 245, 248);
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 7px;
     transition: all .3s ease;
 }
 

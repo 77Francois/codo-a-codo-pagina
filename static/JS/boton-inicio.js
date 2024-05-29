@@ -34,6 +34,7 @@ document.getElementById("formInicio").addEventListener("submit", function(event)
         event.target.submit();
     });
   }
+  
 });
 
 

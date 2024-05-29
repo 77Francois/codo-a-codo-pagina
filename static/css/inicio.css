@@ -4,7 +4,8 @@
 
 }
 body{
-    background-color: rgb(85, 151, 99);
+    background-image: url(https://images.pexels.com/photos/1710352/pexels-photo-1710352.jpeg?auto=compress&cs=tinysrgb&w=1260&h=850&dpr=1);
+    width: 100%;
 }
 .nom-pag{
     display: flex;
@@ -29,82 +30,98 @@ h1{
 }
 .item-google {
     width: 360px;  
-    background: white;
-    padding: 8px;
-    font-size: 12px;
-    border-radius: 4px;
-    text-align: center;   
-}
-.ini-google{
-    font-size: 21px;
-    text-decoration: none;
-
-}
-.item-face {
-    width: 360px;
-    background: blue;
+    /* background: white; */
     padding: 8px;
     font-size: 12px;
     border-radius: 4px;
     text-align: center;
+    border: white solid 2px;   
+}
+.item-google:hover{
+    background-color: white;
+}
+
+.ini-google{
+    font-size: 21px;
+    text-decoration: none;
+    color: black;
+}
+.item-face {
+    width: 360px;
+    /* background: blue; */
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    text-align: center;
+    border: rgb(25, 25, 174) solid 2px;
+}
+.item-face:hover{
+    background-color: rgb(25, 25, 174); 
 }
 .ini-face{
     font-size: 21px;
     text-decoration: none;
+    /* color: rgb(25, 25, 174); */
     color: white;
 }
 
+
 .correo-pass {
-    background-color: rgb(103, 138, 157);
+    /* background-color: rgb(103, 138, 157); */
     display: block;
     height: auto;
-    width: 380px;
-    border: black solid 3px;
-    border-radius: 7px;
-    margin-left: 495px;   
+    width: 376px;
+    border: black solid 2px;
+    border-radius: 4px;
+    margin-left: 500px;   
 }
 .correo-electronico{
     display: flex;
     flex-direction: column;
 }
 p{
+    margin-left: 10px;
     padding: 7px;
     font-size: 16px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 input{
-    width: 350px;
+    margin-left: 10px;
+    width: 324px;
     height: 30px;
+    border-radius: 8px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+input:hover{
+    background: rgb(145, 145, 165);
 }
 div {
     font-size: 15px;
-    padding: 15px 0 15px 10px; 
+    padding: 7px 0 7px 10px; 
 }
-input {
-    border-radius: 8px;
-    width: 350px;
-}
+
 
 label {
     font-size: 20px;
     font-family: sans-serif;
 }
 .boton-inicio {
-    margin-left: 15px;
-    background: rgb(23, 67, 50);
+    margin-left: 20px;
+    background: black;
     color: white;
     border: black solid 2px;
     font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 4px;
     padding: 7px;
-    width: 350px;
+    width: 338px;
     cursor: pointer;
 }
 /****************************************** Estilo personalizado para el icono de sweetAlert2 ********************************************************/
 .swal2-icon{
     width: 68px !important;
-    height: 28px !important; 
+    height: 58px !important; 
 }
 .swal2-title{
     margin-top: 10px !important;
@@ -124,13 +141,21 @@ label {
 .boton-volver {
     margin-left: 635px;
     font-size: 21px;
-    background: rgb(103, 138, 157);
-    border-radius: 3px;    
+    font-weight: 500;
+    background: transparent;
+    border-radius: 3px;  
+    border: black solid 2px;  
+}
+.boton-volver:hover{
+    background-color: black;
 }
 .texto {
     padding: 7px;
     color: black;
     text-decoration: none;
+}
+.texto:hover{
+    color: white;
 }
 @media screen and (max-width: 767px) {
 
@@ -142,6 +167,7 @@ label {
     }
     .ini-google{
         font-size: 15px;
+        
     }
     .item-face {
         width: 200px;
@@ -150,16 +176,17 @@ label {
         font-size: 15px;
     }
     .correo-pass {
-        width: 210px;
+        width: 216px;
         margin-left: 70px;   
     }
     input{
-        width: 185px;
+        margin-left: 0px;
+        width: 183px;
     }
     .boton-inicio {
-        margin-left: 9px;
+        margin-left: 11px;
         padding: 7px;
-        width: 190px;
+        width: 195px;
     }
     .boton-volver {
         margin-left: 135px;
@@ -195,16 +222,17 @@ label {
         font-size: 18px;
     }
     .correo-pass {
-        width: 299px;
+        width: 305px;
         margin-left: 300px;   
     }
     input{
-        width: 275px;
+        margin-left: 0px;
+        width: 272px;
     }
     .boton-inicio {
         margin-left: 10px;
         padding: 7px;
-        width: 278px;
+        width: 285px;
     }
     .boton-volver {
         margin-left: 410px;

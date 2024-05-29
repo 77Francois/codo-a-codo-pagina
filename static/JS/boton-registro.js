@@ -80,4 +80,5 @@ document.getElementById("formRegister").addEventListener("submit", function(even
           event.target.submit();
       });
   }
-});
+});           
+/***************************************************************este codigo queda sin usar**************************************************************************/

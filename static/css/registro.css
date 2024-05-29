@@ -4,13 +4,13 @@
 
 }
 body{
-    background-color: rgb(175, 162, 162);
+    background-image: url(https://images.pexels.com/photos/1552212/pexels-photo-1552212.jpeg?auto=compress&cs=tinysrgb&w=1360&h=1200&dpr=1);  /*modifique las medidas directamente en la url*/
 }
 .nom-pag{
     display: flex;
     height: 80px;
     width: 100%;
-    background: rgb(228, 150, 5);
+    background: rgb(90, 152, 124);
     color: white;
     padding: 0 0 0 15px;
     
@@ -21,12 +21,13 @@ h1{
     text-align: center;
 }
 .reg-container {
-    background-color: rgb(228, 150, 5);
+    /* background-color: rgb(90, 152, 124); */
+
     display: block;
     height: auto;
     width: 380px;
     border: black solid 3px;
-    border-radius: 7px;
+    border-radius: 13px;
     margin-left: 490px;
 }
 .registro-items {
@@ -35,10 +36,22 @@ h1{
 }
 div {
     font-size: 15px;
-    padding: 10px 0 10px 10px; 
+    padding: 7px 0 7px 10px; 
 }
+
 input {
-    border-radius: 8px;
+    border-radius: 12px;
+    height: 25px;
+    width: 340px;
+    cursor: pointer;
+    color: rgb(61, 61, 169);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#term-cond{
+    width: 15px;
+    height: 15px;
 }
 h2 {
     font-size: 25px;
@@ -46,15 +59,19 @@ h2 {
     text-align: center;
 }
 label {
-    font-size: 15px;
+    font-size: 11px;
     font-weight: bold;
     font-family: sans-serif;
+    color: white;
+}
+input:hover{
+    background: rgb(166, 153, 153);
 }
 .boton-registro {
     margin-left: 15px;
-    background: rgb(47, 7, 47);
+    background: black;
     color: white;
-    border: black solid 2px;
+    border: white solid 2px;
     font-size: 13px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 4px;
@@ -64,7 +81,7 @@ label {
 /****************************************** Estilo personalizado para el icono de sweetAlert2 ********************************************************/
 .swal2-icon{
     width: 68px !important;
-    height: 28px !important; 
+    height: 58px !important; 
 }
 .swal2-title{
     margin-top: 10px !important;
@@ -83,20 +100,30 @@ label {
 .boton-volver {
     margin-left: 635px;
     font-size: 21px;
-    background: rgb(228, 150, 5);
-    border-radius: 3px;
-     
+    /* background: rgb(90, 152, 124); */
+    background: transparent;
+    border-radius: 3px;    
+}
+.boton-volver:hover{
+    background-color: white;
 }
 .texto {
     padding: 7px;
-    color: black;
+    color: white;
     text-decoration: none;
+    font-weight: bold;
+}
+.texto:hover{
+    color: black;
 }
 
 @media screen and (max-width: 767px) {
     .reg-container {
         width: 300px;
         margin-left: 25px;
+    }
+    input{
+        width: 255px;
     }
     .boton-volver {
         margin-left: 135px;

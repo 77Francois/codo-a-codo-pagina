@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="./static/img/favicon.ico" type="imagen/x-icon">  <!--tengo que asegurarme que es el icono que busco-->
     <link rel="stylesheet" href="../static/JS/boton-registro.js">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-    
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
     
 </head>
 <body>
@@ -24,21 +24,22 @@
                 <h2>Registrarse</h2>
                 <form action="#" id="formRegister" method="GET" novalidate>  <!--  action="" es la ruta por donde va a enviar lo que ingrese por el metodo que especifique. POST lo uso para enviar a un servidor-->
                     <div class="form-control">
-                        <label>Usuario</label>
+                        <label for="campo-usuario">Usuario</label>
                         <input type="text" required name="campo-usuario" id="campo-usuario">
                     </div>
+                    <div class="error" id="error-usuario"></div>
                     <div>
-                        <label>Nombre</label>
+                        <label for="campo-nombre">Nombre</label>
                         <input type="text" required name="campo-nombre" id="campo-nombre">
                     </div>
                     <div class="error" id="error-nombre"></div>
                     <div>
-                        <label>Apellido</label>
+                        <label for="campo-apellido">Apellido</label>
                         <input type="text" required name="campo-apellido" id="campo-apellido">
                     </div>
                     <div class="error" id="error-apellido"></div>
                     <div>
-                        <label>Fecha de nacimiento</label>
+                        <label for="campo-fecha">Fecha de nacimiento</label>
                         <input type="date" required name="campo-fecha" id="campo-fecha">
                     </div>
                     <div class="error" id="error-fecha"></div>
@@ -68,12 +69,12 @@
                         </select>
                     </div>
                     <div class="form-control">
-                        <label>Contraseña</label>
+                        <label for="campo-contraseña">Contraseña</label>
                         <input type="password" required name="campo-contraseña" id="campo-contraseña">
                     </div>
                     <div class="error" id="error-password"></div>
                     <div>
-                        <label>Repetir contraseña</label>
+                        <label for="campo-repetir-contraseña">Repetir contraseña</label>
                         <input type="password" required name="campo-repetir-contraseña" id="campo-repetir-contraseña">
                     </div>
                     <div class="error" id="error-re-password"></div>
@@ -109,6 +110,7 @@
     </main>
     <!-- <script src="sweetalert2.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../static/JS/boton-registro.js"></script>
+    <!-- <script src="../static/JS/boton-registro.js"></script>    este archivo no se usara queda obsoleto-->
+    <script src = "../static/JS/validacion-registro.js"></script>
 </body>
 </html>

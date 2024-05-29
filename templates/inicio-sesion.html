@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de sesion</title>
     <link rel="stylesheet" href="../static/css/inicio.css">
-    <link rel="stylesheet" href="../static/css/boton-inicio.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <link rel="stylesheet" href="../static/css/boton-inicio.css"> solo paa pruebas -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> se llama al pie de main -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 </head>
 <body>
@@ -38,20 +38,21 @@
                     </label> 
                 </div>
             </div>
-        </section>    
+        </section>
+        <br>    
         <section class="correo-pass">
                 <form action="#" id="formInicio" method="get" novalidate>  <!--  action="" es la ruta por donde va a enviar lo que ingrese por el metodo que especifique. POST lo uso para enviar a un servidor-->
                     <div class="correo-electronico">
-                        <label for="">
+                        <label for="campo-email">
                             <p>Correo electronico</p>
                             <input type="email"  required name="campo-email" id="campo-email" placeholder="Por favor ingrese su e-mail">
                         </label>
-                        <div class="error" id="error-email"></div>   
+                        <div class="error" id="error-email"></div>    
                     </div>
                     <div class="contraseña">
-                        <label for="">
+                        <label for="campo-contraseña">
                             <p class="text-contraseña">Contraseña</p>
-                            <input type="password"  required name="campo-contraseña" id="campo-contraseña" placeholder="ingrese una contraseña valida">
+                            <input type="password"  required name="campo-contraseña" id="campo-contraseña" placeholder="ingrese de 4 a 12 digitos">
                         </label>
                         <div class="error" id="error-password"></div>    
                     </div>
@@ -59,12 +60,13 @@
                         Iniciar sesion    
                     </button>
                 </form>
-                <br>
+                
                 <br>
             </div>
         </section>
     </main>
-    <script src="../static/JS/boton-inicio.js"></script>
+    <script src="../static/JS/validacion-inicio.js"></script>
+    <!-- <script src="../static/JS/boton-inicio.js"></script> para pruebas -->
     <script src="sweetalert2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
     <br>    

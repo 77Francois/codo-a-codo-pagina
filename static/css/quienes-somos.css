@@ -40,7 +40,7 @@ body {
 
 .logo_inicio {
     height: 40px;    
-    color: rgb(213, 147, 116);
+    color: rgb(12, 12, 12);
     font-size: 20px;
     cursor: pointer;
     transition: font-size 1s ease;
@@ -235,14 +235,17 @@ p {
 }
 
 .picture_container {
-    flex: 0 0 40%;
+    flex: 0 0 45%;
 }
 
-.about_image {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
+.inner_picture {
+    padding-top: 30px;
+    padding-right: 20px;
+}
+
+img {
+    max-width: 100%;
+
 }
 
 /******responsive para tablet**********/
@@ -263,8 +266,20 @@ p {
 }
 
 /**********responsive para celular**********/
+@media (max-width: 858px) {
+    h1, h2, .text_container {
+        font-size: 1.4rem;
+        margin: 0;
+    }
 
+    h1 {
+        font-size: 2rem;
+    }
 
+    h2 {
+        font-size: 2.2rem;
+    }
+ }
 
 /*************************FOOTER*********************************/
 

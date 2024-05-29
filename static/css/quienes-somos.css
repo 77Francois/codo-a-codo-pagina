@@ -127,7 +127,7 @@ li a:hover {
     }
 
     nav .menu_principal {
-        background: rgb(177, 158, 158);
+        background: rgb(245, 242, 242);
         position: fixed;
         width: 100%;
         top: 80px;
@@ -244,6 +244,27 @@ p {
     height: auto;
     margin: 0 auto;
 }
+
+/******responsive para tablet**********/
+
+@media (max-width: 952px) {
+    .inside_container {
+        display: block;
+    }
+
+    .main_text {
+        text-align: center;
+    }
+
+    .picture_container {
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
+/**********responsive para celular**********/
+
+
 
 /*************************FOOTER*********************************/
 

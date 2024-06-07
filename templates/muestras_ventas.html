@@ -16,40 +16,115 @@
       <br>
       <main>
         <div class="titulo-imagenes">
-          <p class="text-imagenes">Nuestros productos</p>
+          <p class="text-imagenes">LLeva nuestros productos.</p>
         </div>
-        <div class="slideshow-container">
-            <div class="slide">
-              <img src="https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg" alt="Imagen1 de cocina">
-            </div>
-            <div class="slide">
-              <img src="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen2 de cocina">
-            </div>
-            <div class="slide">
-              <img src="https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen3 de cocina">
-            </div>
-            <div class="slide">
-              <img src="https://images.pexels.com/photos/210687/pexels-photo-210687.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="imagen4 de cocina">
-            </div>
-            <div class="slide">
-              <img src="https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image5 de cocina">
-            </div>
-            <div class="slide">
-              <img src="https://images.pexels.com/photos/3926542/pexels-photo-3926542.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image6 de cocina">
-            </div>
-            <div class="slide">
-              <img src="https://images.pexels.com/photos/6283972/pexels-photo-6283972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image7 de cocina">
-            </div>
-            <div class="slide">
-              <img src="https://images.pexels.com/photos/6032416/pexels-photo-6032416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image8 de cocina">
-            </div>
+        <div class="texto-valores">
+          <p class="precio">$ 307.800</p>
+          <p class="cuotas">en 6 cuotas, sin interes, de $ 51.300</p>
+        </div>
+        <div class="Medios">
+          <p class="texto-medios">Medios de pago:</p>
+        </div>
+        <div class="contenedor">
+          <section class="slideshow-container">
+              <div class="slide">
+                <img src="https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg" alt="Imagen1 de cocina">
+              </div>
+              <div class="slide">
+                <img src="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen2 de cocina">
+              </div>
+              <div class="slide">
+                <img src="https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen3 de cocina">
+              </div>
+              <div class="slide">
+                <img src="https://images.pexels.com/photos/210687/pexels-photo-210687.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="imagen4 de cocina">
+              </div>
+              <div class="slide">
+                <img src="https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image5 de cocina">
+              </div>
+              <div class="slide">
+                <img src="https://images.pexels.com/photos/3926542/pexels-photo-3926542.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image6 de cocina">
+              </div>
+              <div class="slide">
+                <img src="https://images.pexels.com/photos/6283972/pexels-photo-6283972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image7 de cocina">
+              </div>
+              <div class="slide">
+                <img src="https://images.pexels.com/photos/6032416/pexels-photo-6032416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image8 de cocina">
+              </div>
 
-            <!-- Agrega más divs con clase "slide" y las imágenes que desees mostrar -->
-            
-            <!-- Flechas de navegación -->
-            <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
-            <a class="next" onclick="moveSlide(1)">&#10095;</a>
-          </div>   
+              <!-- Agrega más divs con clase "slide" y las imágenes que desees mostrar -->
+              
+              <!-- Flechas de navegación -->
+              <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+              <a class="next" onclick="moveSlide(1)">&#10095;</a>
+          </section>
+          <section class="contenedor-formulario-de-compra">  <!--contiene los div de formularios de carga de tarjetas y las imagenes de la tarjeta-->
+            <section class="formulario-de-compra">
+              <div class="sector" id="numero">
+                <p class="texto">Numero de tarjeta</p>
+                <input type="integer" required name="numero" id="num-tarj" placeholder="#### #### #### ####">
+                
+                <!--<p class="numero">#### #### #### ####</p>  ESTO VA CON UN INPUT-->
+              </div>
+              <div class="sector" id="nombre-apellido">
+                <p class="texto">Nombre y apellido</p>
+                <input type="text" required name="nom-ape" id="nom-ape" placeholder="Pepe Sanchez">
+                <p class="como-figura">Como figura en el tarjeta</p>
+                <!--<p class="nombre-apellido">Pepe Sanchez</p> ESTO VA CON UN INPUT-->
+              </div>
+              <!-- este contenedor tiene fecha de vencimiento y cod. de seguridad, uno al lado del otro -->
+              <div class="contenedor-fecha-codigo-flexbox">
+                <div class="sector" id="fecha-vencimiento"> 
+                  <p class="texto">Fecha de vencimiento</p>  <!--ESTO VA CON UN DATE-->
+                  <input type="date" required name="fech-venc" id="fech-venc">
+                  <p class="fecha">Mes / Año</p>
+                </div>
+                <div class="sector" id="cod-seguridad">
+                  <p class="texto">Codigo de seguridad</p>   <!--ESTO VA CON UN INPUT-->
+                  <input type="password" required name="pass" id="pass" placeholder="***" class="placeholder-grande">
+                  <p class="codigo">CVV</p>
+                </div> 
+              </div>
+              <!-- fin del contenedor flexbox -->
+              <div class="sector" id="dni">
+                <p class="texto">DNI del titular de la tarjeta</p>
+                <input class="dni" required name="documento" id="documento" placeholder="_ _ _ _ _ _ _ _">
+              </div> 
+            </section>
+            <!-- ---------comienza el contenedor de las tarjetas ------------------- -->
+            <section class="contenedor-de-tajetas">
+              <div class="frente">
+                <div class="logo-de-marca">
+                  <img class="logo" src="../static/img/mastercard.png" alt="imagen de logo de marca">
+                </div>
+                <div class="chip-tarjeta">
+                  <img class="chip" src="../static/img/chip-tarjeta.png" alt="imagen de chip de tarjeta">
+                </div>
+                <div class="numero-frente">
+                  <p class="num-frente">#### #### #### ####</p>
+                </div>
+                <div class="contenedor-texto-validacion">
+                  <p class="texto-valid">VALID DATES</p>
+                </div>
+                <div class="fecha-frente">
+                  <p class="date-frente">06/21 - 06/27</p>
+                </div>
+                <div class="nombre-frente">
+                  <p class="texto-name">PEPE SANCHEZ</p>
+                </div>
+              </div>
+              <div class="dorso">
+                <div class="barra-magnetica"></div>
+                <div class="contenedor-barra-de-firma-clave">
+                  <div class="barar-de-firma-clave"></div>
+                  <div class="contenedor-cod">
+                    <p class="cod">***</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section> 
+        </div>  
       </main>
   <script src="../static/JS/muestras_ventas.js"></script>    
   </body>

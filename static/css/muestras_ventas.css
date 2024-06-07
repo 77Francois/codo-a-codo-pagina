@@ -3,7 +3,7 @@
   padding: 0;
 }
 body{
-  background-color: grey;
+  background-color: rgb(119, 106, 204); 
 }
 .nom-barra{
   width: 100%;
@@ -11,12 +11,14 @@ body{
   background-color: rgb(76, 123, 76);
   line-height: 70px; /*centra en el eje Y mi texto*/
 }
-.nom-empresa{
+.nom-empresa{           
   margin-left: 15px;
   font-size: 30px;
   font-weight: bold;
 }
+/************************************comienza titulo************************************************/
 .titulo-imagenes{
+  padding-top: 50px;
   height: 30px;
   width: 100%;
   text-align: center;
@@ -24,14 +26,42 @@ body{
 }
 .text-imagenes{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 25px;
+  font-size: 35px;
   color: rgb(25, 42, 25);
   font-weight: bold;
 }
+.texto-valores{
+  margin-top: 50px;
+  padding-left: 65px;
+}
+.precio{
+  font-size: 27px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.cuotas{
+  padding-left: 15px;
+  font-size: 16px;
+}
+.texto-medios{
+  font-size: 36px;
+  margin-left: 850px;
+}
+/*********************************termina el titulo*************************************************/
+.contenedor{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  /* background-color: yellow; solo para visualizar dimensiones  */
+  justify-content: space-between;
+  
+}
 .slideshow-container {
+  padding: 40px 0px 40px 0px;
   position: relative;
-  max-width: 1000px;
-  margin-left: 100px;
+  max-width: 650px;
+  margin-left: 60px;
+  /*background-color: black;  para poder ver que ocupa el contenedor*/
 }
   
 .slide {
@@ -42,7 +72,7 @@ img {
   width: 550px;
   height: 450px;
   border: rgb(57, 53, 53) solid 3px;
-  border-radius: 7px;
+  border-radius: 13px;
 }
   
   /* Estilo para las flechas de navegación */
@@ -56,11 +86,11 @@ img {
 }
  
 .prev {
-  left: -45px;
+  left: -38px;
 }
   
 .next {
-  right: 405px;
+  right: -35px;
 }
 
 .prev:hover{
@@ -73,7 +103,145 @@ img {
   color: rgb(211, 200, 200);
   font-size: 45px;
 }
+.contenedor-formulario-de-compra{
+  width: 100%;
+  position: relative;
+  max-width: 675px;
+  margin-right: 10px;
+  /*background-color: white; solo para visualizar*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.formulario-de-compra{
+  padding: 60px 0px 0px 5px;
+  width: 100%;
+  max-width: 550px;
+}
+.contenedor-de-tajetas{
+  display: flex;
+  padding: 60px 30px 10px 50px ;
+  width: 100%;
+  max-width: 550px;
+  /*background-color: blue;  solo para visualizar*/
+  flex-direction: column;
+}
 
+.placeholder-grande::placeholder{   /*para poder modificar la fuente del placeholder*/
+  font-size: 20px;
+}
+.frente{
+  background-image: url(../img/fondo-tajeta.jpg);
+  height: 150px;
+  width: 250px;
+  border: black solid 2px;
+  border-radius: 13px;
+  padding: 0px 15px 10px 10px;
+}
+.logo-de-marca{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.logo{
+  height: 35px;
+  width: 49px;
+  border-radius: 0px;
+  border: 0px;
+  padding-top: 15px; 
+}
+.chip{
+  height: 35px;
+  width: 43px;
+  border-radius: 0px;
+  border: 0px;
+  padding-top: 5px; 
+  padding-left: 15px;
+}
+.dorso{
+  background-image: url(../img/fondo-tajeta.jpg);
+  height: 150px;
+  width: 250px;
+  border: black solid 2px;
+  border-radius: 13px;
+  padding: 0px 15px 10px 10px;
+  margin-top: 15px;
+}
+.barra-magnetica{
+  height: 37px;
+  width: 100%;
+  margin-top: 15px;
+  padding-left: 0px !important;
+  background-color: black;
+}
+.contenedor-barra-de-firma-clave{
+  display: flex;
+  flex-direction: row;
+}
+.barar-de-firma-clave{
+  height: 25px;
+  width: 65%;
+  background: white;
+}
+.contenedor-cod{
+  margin-top: -15px;
+  margin-left: -15px;
+  background: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+.cod{
+  margin-top: 9px;
+  color: black;
+  font-size: 35px;
+}
+.num-frente{
+  color: white;
+  font-size: 16px;
+  padding-top: 5px;
+  padding-left: 15px;
+}
+.texto-valid{
+  color: white;
+  font-size: 5px;
+  padding-left: 45px;
+}
+.date-frente{
+  font-size: 11px;
+  color: white;
+  padding-left: 25px;
+}
+.texto-name{
+  font-size: 12px;
+  color: white;
+  padding-left: 15px;
+}
+.como-figura{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+.sector{
+  height: 80px;
+  /* background-color: aqua;  solo para visualizar */
+}
+input{
+  height: 25px;
+  width: 310px;
+  border-radius: 7px;
+  padding-left: 10px;
+}
+input:hover{
+  background: rgb(210, 201, 201);
+}
+.texto{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.fecha{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
 @media screen and (max-width: 767px){
   .slideshow-container {
     margin-left: 50px;

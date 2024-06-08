@@ -14,7 +14,7 @@ body{
   /* background-color: rgb(76, 123, 76); */
   background-color: rgb(89, 87, 87);
   line-height: 70px; /*centra en el eje Y mi texto*/
-  position: fixed;
+  position: sticky;
 }
 .nom-empresa{           
   margin-left: 15px;
@@ -23,7 +23,7 @@ body{
 }
 /************************************comienza titulo************************************************/
 .titulo-imagenes{
-  padding-top: 80px;
+  padding-top: 50px;
   height: 30px;
   width: 100%;
   text-align: center;
@@ -91,6 +91,8 @@ img {
   height: 450px;
   border: rgb(57, 53, 53) solid 3px;
   border-radius: 13px;
+  box-shadow: 15px 15px 25px rgba(0,0,0,0.9);
+
 }
   
   /* Estilo para las flechas de navegación */
@@ -155,6 +157,12 @@ img {
   border: black solid 2px;
   border-radius: 13px;
   padding: 0px 15px 10px 10px;
+  box-shadow: 15px 15px 25px rgba(0,0,0,0.9);
+  transition: transform 0.3s ease;
+}
+.frente:hover{
+  transform: scale(1.1);
+
 }
 .logo-de-marca{
   display: flex;
@@ -183,6 +191,11 @@ img {
   border-radius: 13px;
   padding: 0px 15px 10px 10px;
   margin-top: 15px;
+  box-shadow: 15px 15px 25px rgba(0,0,0,0.9);
+  transition: transform 0.3s ease;
+}
+.dorso:hover{
+  transform: scale(1.1);
 }
 .barra-magnetica{
   height: 37px;
@@ -290,17 +303,19 @@ input:hover{
   display: flex;
   width: 300px;
   height: 35px;
-  border: 3px;
+  border: black solid 4px;
   border-radius: 7px;
-  background-color: rgb(4, 4, 46);
+  background-color: rgb(52, 52, 67);
   margin-left: 550px;
+  border: black solid 2px;
 }
 .texto-volver{
-  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 27px;
   text-decoration: none;
-  color: white;
-  margin-left: 115px;
+  color: black;
+  margin-left: 95px;
 }
 @media screen and (max-width: 767px){
   .slideshow-container {

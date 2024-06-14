@@ -768,8 +768,7 @@ h2{
     right: 50px;  /*lo alejo 50px del lateral derecho*/
     height: 35px;
     width: 35px;
-    font-size: 45px;
-    
+    font-size: 45px; 
 }
 .boton a i{
     border: black solid 2px;
@@ -780,8 +779,131 @@ h2{
 .boton i:hover{
     color: #c42d5f;
 }
-                                                                                                                                                                                                          
-
+/*******************************************************seccion de gestion de productos******************************************************************************/   
+h1{
+    margin-left: 495px;
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+.texto-titulo-producto{
+    margin-left: 505px;
+    padding-bottom: 35px;
+}
+h3{
+    margin-left: 425px;  
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.container-alt-baj-mod{
+    display: flex;
+    flex-direction: column;
+    /* background-color: white; */
+}                         
+.alta{
+    display: flex;
+    flex-direction: row;
+    /* background-color: violet;  */
+    padding-left: 200px; 
+    
+}   
+.form-control-alt-baj-mod{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-inline: 40px;
+    padding-bottom: 20px;
+}      
+label{
+    padding-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+}                                                                                                                                                                     
+.btn-agregar{
+    line-height: 95px;
+}
+.boton-agregar{
+    background-color: black;
+    color: white;
+    height: 29px;
+    border-radius: 7px;
+}
+.texto-agregar{
+    padding: 0px 8px 0px 8px;
+}
+#campo-producto{
+    border: 3px solid rgb(75, 70, 70);
+    border-radius: 20px;
+    height: 30px;
+}
+#campo-valor{
+    border: 3px solid rgb(75, 70, 70);
+    border-radius: 20px;
+    height: 30px;
+}
+#campo-imagen{
+    border: 3px solid rgb(75, 70, 70);
+    border-radius: 20px;
+    height: 30px;
+}
+.modificaciones{
+    display: flex;
+    flex-direction: column;
+    /* background-color: violet;  */
+    padding-left: 200px;  
+} 
+.titulos{
+    display: flex;
+    flex-direction: row;  
+}
+.texto-objeto-seleccionado{
+    width: 23%;
+    /* background-color: white; para poder ver las dimensiones  */
+    padding-inline: 40px; 
+    font-size: 21px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+}
+.borrar-modificar{
+    display: flex;
+    flex-direction: row;
+    height: 180px;
+    /* background-color: #54b0e5; esto es para poder ver las dimensiones  */
+}
+.texto-objeto-modificar-borrar{
+    padding: 0px 10px 0px 35px;
+    font-size: 14px;
+    line-height: 180px;
+    width: 23%;
+}
+.texto-objeto-modificar-borrar-imagen{
+    height: 160px;
+    width: 250px;
+    background-color: black;  /*se borra al definir el codigo para la imagen y su tamaño*/
+    border: 3px black;     /*se borra al definir el codigo para la imagen y su tamaño*/
+}
+.boton-modificar{
+    background-color: black;
+    color: white;
+    height: 29px;
+    border-radius: 7px;
+}
+.texto-modificar{
+    padding: 0px 8px 0px 8px;
+}
+.boton-borrar{
+    background-color: black;
+    color: white;
+    height: 29px;
+    border-radius: 7px;  
+}
+.btn-modificar-borrar{
+    line-height: 180px;
+}
+.texto-borrar{
+    padding: 0px 17px 0px 17px;
+}
 @media screen and (max-width: 767px) {     /* Media query para pantallas hasta 767px usamos iphone SE como modelo */
     /******************************************************seccion cocina responsive***************************************/
     .title-cocina {
@@ -909,44 +1031,6 @@ h2{
         line-height: 30px;
         text-align: center;
     }
-
-
-/*
-@media (min-width: 700px) {
-    .navegacion {
-        flex-wrap: nowrap;
-        padding: 0;
-    }
-}
-*/
-/*
-@media (min-width: 700px) {
-    .menu__inner {
-        margin-inline-start: .5rem;
-    }
-}
-*/
-/*intentamos sombrear 
-.contenedor{
-    position: relative;
-    display: inline-block;
-}
-.contenedor img{
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-.contenedor::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
-}
-termina sombreado. No funciono, quedo horrible*/
 
     /********************************seccion de baño responsive******************************************************/
     .title-baño {

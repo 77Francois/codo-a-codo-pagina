@@ -144,6 +144,7 @@
                     Todos nuestros productos incluyen instalacion
                 </p>
             </div>
+            
         </section>
         <br>
         <br>
@@ -435,87 +436,71 @@
         <br>
         <br>
         <br>
-        <!-- <section class="fondo-cocina" id="coc">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <h2 class="section-heading">Cocina</h2>
+        <!---------------------------------------------------------------- seccion de gestion de nuestros productos ------------------------------------------------------------>
+        <section>   
+            <h1>Admnistracion de productos</h1>
+            <br>
+            <h4 class="texto-titulo-producto">Sector para administrar los productos de cada area.</h4>
+            <form action="#" class="container-alt-baj-mod" id="formRegister" method="GET" novalidate >  <!--  action="" es la ruta por donde va a enviar lo que ingrese por el metodo que especifique. POST lo uso para enviar a un servidor ---------esta clase me permite usar display block/flex-->
+                <div class="alta">  <!--esta clase la uso para display row/flex-->
+                    <div class="form-control-alt-baj-mod">
+                        <label for="campo-producto">Producto</label>
+                        <input type="text" required name="campo-producto" id="campo-producto" placeholder="Ingrese el producto que quieres ">
                     </div>
-                </div>                          
-            </div>        
-        </section> -->
-       
-        <!--<section class="fondo-comedor" id="com">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <h2 class="section-heading">Comedor</h2>
+                    <div class="form-control-alt-baj-mod">
+                        <label for="campo-valor">Precio</label>
+                        <input type="text" required name="campo-valor" id="campo-valor" placeholder="Ingrese el valor del producto">  
                     </div>
-                </div>
-            </div>
-        </section>-->
-       
-        <!-- <section class="fondo-living" id="liv">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center">                
-                        <h2 class="section-heading">Living</h2>                    
+                    <div class="form-control-alt-baj-mod">
+                        <label for="campo-imagen">Imagen</label>
+                        <input type="url" required name="campo-imagen" id="campo-imagen" placeholder="Ingrese la imagen del producto">    <!--calculo que va un a para ir o buscar algo-->
+                    </div>
+                    <div class="btn-agregar">
+                        <button type="submit" class="boton-agregar" id="btn-agregado">  <!-- tengo que ver showAlert-->
+                            <p class="texto-agregar">Agregar</p>   
+                        </button>
                     </div>
                 </div>
-            </div>                
-        </section> 
-        <br>
-        <br>
-         
-        <section class="fondo-dormitorio" id="dor">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <h2 class="section-heading">Dormitorio</h2>
+                <h3>Administracion de modificaciones y eliminacion de productos.</h3>
+                <div class="modificaciones">   <!--esta clase la uso para display block/flex-->
+                    <div class="titulos">    <!--esta clase la uso para display row/flex-->
+                        <div class="texto-objeto-seleccionado">
+                            <p>Producto</p>
+                        </div>
+                        <div class="texto-objeto-seleccionado">
+                            <p>Precio</p>
+                        </div>
+                        <div class="texto-objeto-seleccionado">
+                            <p>Imagen del producto</p>
+                        </div>
                     </div>
-                </div>
-            </div>   
+                    <div class="borrar-modificar">  <!--esta clase la uso para display row/flex-->
+                        <div class="texto-objeto-modificar-borrar">
+                            <p class="texto-nombre">parrafo de producto traido de la base</p>
+                        </div>
+                        <div class="texto-objeto-modificar-borrar">
+                            <p class="texto-valor">parrafo del precio traido del la base</p>
+                        </div>
+                        <div class="texto-objeto-modificar-borrar-imagen">
+                            <p class="texto-reemplaza-imagen">imagen traida de la base</p>    <!--se reemplza totalmente por la imagen-->
+                        </div>
+                        <div class="btn-modificar-borrar">
+                            <button type="submit" class="boton-modificar" id="btn-modificado">  <!-- tengo que ver showAlert-->
+                                <p class="texto-modificar">Modificar</p>   
+                            </button>
+                            <button type="submit" class="boton-borrar" id="btn-borrado">  <!-- tengo que ver showAlert-->
+                                <p class="texto-borrar">Borrar</p>   
+                            </button>
+                        </div>     
+                    </div>
+                </div>    
+            </form>
         </section>
         <br>
-        <br>
-        
-        <section class="fondo-baño" id="bañ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <h2 class="section-heading">Baño</h2>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <br>
-        <br>
-        
-        <section class="fondo-jardin" id="jardineria">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <h2 class="section-heading">Jardin</h2>
-                    </div>
-                </div>               
-            </div>
-        </section>
-        <br>
-        <br>
-     
-        <section class="fondo-terraza" id="terrazas">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <h2 class="section-heading">Terraza</h2>
-                    </div>
-                </div>   
-            </div>
-        </section> -->
-    <div class="boton">
-        <a href="#ar"><i class="fa-solid fa-circle-chevron-up"></i></a>
-    </div>
-    <script src="boton-arriba.js"></script>
+        <div class="boton">
+            <a href="#ar"><i class="fa-solid fa-circle-chevron-up"></i></a>
+        </div>
+        <script src="boton-arriba.js"></script>
     </body>
     <footer class="footer">
         <div class="footer_container">

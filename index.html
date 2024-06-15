@@ -452,50 +452,51 @@
                         <input type="text" required name="campo-valor" id="campo-valor" placeholder="Ingrese el valor del producto">  
                     </div>
                     <div class="form-control-alt-baj-mod">
-                        <label for="campo-imagen">Imagen</label>
-                        <input type="url" required name="campo-imagen" id="campo-imagen" placeholder="Ingrese la imagen del producto">    <!--calculo que va un a para ir o buscar algo-->
+                        <label for="campo-categoria">Categoria</label>
+                        <input type="text" required name="campo-categoria" id="campo-categoria" placeholder="Ingrese la categoria">
                     </div>
+                    
+                    <div class="form-control-alt-baj-mod">
+                        <label for="campo-imagen">Imagen</label>
+                        <input type="url" class="buscador-de-la-imagen" required name="campo-imagen" id="campo-imagen" placeholder="Ingrese la imagen del producto">    <!--calculo que va un a para ir o buscar algo-->
+                    </div>
+                    <input type="hidden" name="id" id="id-producto">
                     <div class="btn-agregar">
                         <button type="submit" class="boton-agregar" id="btn-agregado">  <!-- tengo que ver showAlert-->
                             <p class="texto-agregar">Agregar</p>   
                         </button>
                     </div>
                 </div>
-                <h3>Administracion de modificaciones y eliminacion de productos.</h3>
-                <div class="modificaciones">   <!--esta clase la uso para display block/flex-->
-                    <div class="titulos">    <!--esta clase la uso para display row/flex-->
-                        <div class="texto-objeto-seleccionado">
-                            <p>Producto</p>
-                        </div>
-                        <div class="texto-objeto-seleccionado">
-                            <p>Precio</p>
-                        </div>
-                        <div class="texto-objeto-seleccionado">
-                            <p>Imagen del producto</p>
-                        </div>
-                    </div>
-                    <div class="borrar-modificar">  <!--esta clase la uso para display row/flex-->
-                        <div class="texto-objeto-modificar-borrar">
-                            <p class="texto-nombre">parrafo de producto traido de la base</p>
-                        </div>
-                        <div class="texto-objeto-modificar-borrar">
-                            <p class="texto-valor">parrafo del precio traido del la base</p>
-                        </div>
-                        <div class="texto-objeto-modificar-borrar-imagen">
-                            <p class="texto-reemplaza-imagen">imagen traida de la base</p>    <!--se reemplza totalmente por la imagen-->
-                        </div>
-                        <div class="btn-modificar-borrar">
-                            <button type="submit" class="boton-modificar" id="btn-modificado">  <!-- tengo que ver showAlert-->
-                                <p class="texto-modificar">Modificar</p>   
-                            </button>
-                            <button type="submit" class="boton-borrar" id="btn-borrado">  <!-- tengo que ver showAlert-->
-                                <p class="texto-borrar">Borrar</p>   
-                            </button>
-                        </div>     
-                    </div>
-                </div>    
             </form>
         </section>
+        <h3>Administracion de modificaciones y eliminacion de productos.</h3>
+        <section class="container-productos" id="lista-producto">
+            
+            <table class="modificaciones">
+                <thead>
+                    <tr class="titulos">
+                        <th class="texto-objeto-seleccionado">Producto</th>
+                        <th class="texto-objeto-seleccionado">Precio</th>
+                        <th class="texto-objeto-seleccionado">Categoria</th>
+                        <th class="texto-objeto-seleccionado">Imagen</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            <div class="btn-modificar-borrar">
+                <button type="submit" class="boton-modificar" id="btn-modificado">  
+                    <p class="texto-modificar">Modificar</p>   
+                </button>
+                <button type="submit" class="boton-borrar" id="btn-borrado">  
+                    <p class="texto-borrar">Borrar</p>   
+                </button>
+            </div>
+        </section>
+                  
+            
+        
         <br>
         <div class="boton">
             <a href="#ar"><i class="fa-solid fa-circle-chevron-up"></i></a>

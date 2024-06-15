@@ -803,7 +803,7 @@ h3{
     display: flex;
     flex-direction: row;
     /* background-color: violet;  */
-    padding-left: 200px; 
+    padding-left: 100px; 
     
 }   
 .form-control-alt-baj-mod{
@@ -846,24 +846,30 @@ label{
     border-radius: 20px;
     height: 30px;
 }
+#campo-categoria{
+    border: 3px solid rgb(75, 70, 70);
+    border-radius: 20px;
+    height: 30px;
+}
 .modificaciones{
     display: flex;
-    flex-direction: column;
-    /* background-color: violet;  */
-    padding-left: 200px;  
+    flex-direction: row;
+    /* background-color: violet; para identificar dimensiones */
+    padding-left: 62px;  
 } 
-.titulos{
-    display: flex;
-    flex-direction: row;  
-}
+
 .texto-objeto-seleccionado{
     width: 23%;
-    /* background-color: white; para poder ver las dimensiones  */
-    padding-inline: 40px; 
-    font-size: 21px;
+    /* background-color: black; para identificar dimensiones */
+    padding-inline: 85px; 
+    font-size: 18px;
     padding-top: 15px;
     padding-bottom: 15px;
     color: white;
+}
+.container-productos{
+    display: flex;
+    flex-direction: row;
 }
 .borrar-modificar{
     display: flex;
@@ -900,6 +906,7 @@ label{
 }
 .btn-modificar-borrar{
     line-height: 180px;
+    padding-left: 20px;
 }
 .texto-borrar{
     padding: 0px 17px 0px 17px;

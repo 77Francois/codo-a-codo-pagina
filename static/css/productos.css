@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: rgb(208, 138, 40);
+}
+.titulo-adm{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: rgb(42, 71, 60);
+    color: white;
+    padding: 0 0 0 15px; 
+}
+.ad{
+    line-height: 80px;
+    vertical-align: middle;
+    margin-left: 40px !important;
+}
+h1{
+    margin-left: 495px;
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+.texto-titulo-producto{
+    margin-left: 505px;
+    padding-bottom: 35px;
+}
+.container-alt-baj-mod{
+    display: flex;
+    flex-direction: column;
+    /* background-color: white; */
+}  
+.alta{
+    display: flex;
+    flex-direction: row;
+    /* background-color: violet;  */
+    padding-left: 100px; 
+    
+}   
+
+.form-control-alt-baj-mod{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-inline: 40px;
+    padding-bottom: 20px;
+} 
+
+label{
+    padding-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+}    
+
+#campo-producto{
+    border: 3px solid rgb(75, 70, 70);
+    border-radius: 20px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#campo-valor{
+    border: 3px solid rgb(75, 70, 70);
+    border-radius: 20px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#campo-categoria{
+    border: 3px solid rgb(75, 70, 70);
+    border-radius: 20px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#campo-imagen{
+    border: 3px solid rgb(75, 70, 70);
+    border-radius: 20px;
+    height: 30px;
+    cursor: pointer;
+}
+.btn-agregar{
+    line-height: 95px;
+}
+.boton-agregar{
+    background-color: black;
+    color: white;
+    height: 29px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.texto-agregar{
+    padding: 0px 8px 0px 8px;
+}
+
+
+h3{
+    margin-left: 425px;  
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.container-productos{
+    display: flex;
+    flex-direction: row;
+}
+.modificaciones{
+    display: flex;
+    flex-direction: row;
+    /* background-color: violet; para identificar dimensiones */
+    padding-left: 62px;  
+} 
+.texto-objeto-seleccionado{
+    width: 23%;
+    /* background-color: black; para identificar dimensiones */
+    padding-inline: 85px; 
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+}
+.btn-modificar-borrar{
+    line-height: 180px;
+    padding-left: 20px;
+}
+.boton-borrar{
+    background-color: black;
+    color: white;
+    height: 29px;
+    border-radius: 7px;  
+    cursor: pointer;
+}
+.texto-borrar{
+    padding: 0px 17px 0px 17px;
+}
+.texto-modificar{
+    padding: 0px 8px 0px 8px;
+}
+
+
+.borrar-modificar{
+    display: flex;
+    flex-direction: row;
+    height: 180px;
+    /* background-color: #54b0e5; esto es para poder ver las dimensiones  */
+}
+.texto-objeto-modificar-borrar{
+    padding: 0px 10px 0px 35px;
+    font-size: 14px;
+    line-height: 180px;
+    width: 23%;
+}
+.texto-objeto-modificar-borrar-imagen{
+    height: 160px;
+    width: 250px;
+    background-color: black;  /*se borra al definir el codigo para la imagen y su tamaño*/
+    border: 3px black;     /*se borra al definir el codigo para la imagen y su tamaño*/
+}
+.boton-modificar{
+    background-color: black;
+    color: white;
+    height: 29px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+
+.boton {
+    display: block;
+    width: 100%;   
+}
+.boton-volver {
+    margin-left: 585px;
+    padding: 7px 25px 7px 25px;
+    font-size: 31px;
+    background-color: rgb(18, 17, 16);
+    border-radius: 9px; 
+    cursor: pointer; 
+}
+.boton-volver:hover{
+    background-color: white;
+}
+
+.texto {
+    color: white;  
+    text-decoration: none;
+}
+.texto:hover{
+    color: black;
+}

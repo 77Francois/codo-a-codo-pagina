@@ -779,137 +779,22 @@ h2{
 .boton i:hover{
     color: #c42d5f;
 }
-/*******************************************************seccion de gestion de productos******************************************************************************/   
-h1{
-    margin-left: 495px;
-    font-size: 30px;
-    padding-bottom: 40px;
-}
-.texto-titulo-producto{
-    margin-left: 505px;
-    padding-bottom: 35px;
-}
-h3{
-    margin-left: 425px;  
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-.container-alt-baj-mod{
-    display: flex;
-    flex-direction: column;
-    /* background-color: white; */
-}                         
-.alta{
-    display: flex;
-    flex-direction: row;
-    /* background-color: violet;  */
-    padding-left: 100px; 
-    
-}   
-.form-control-alt-baj-mod{
-    display: flex;
-    flex-direction: column;
-    padding-top: 20px;
-    padding-inline: 40px;
-    padding-bottom: 20px;
-}      
-label{
-    padding-bottom: 15px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: white;
-}                                                                                                                                                                     
-.btn-agregar{
-    line-height: 95px;
-}
-.boton-agregar{
-    background-color: black;
-    color: white;
-    height: 29px;
-    border-radius: 7px;
-}
-.texto-agregar{
-    padding: 0px 8px 0px 8px;
-}
-#campo-producto{
-    border: 3px solid rgb(75, 70, 70);
-    border-radius: 20px;
-    height: 30px;
-}
-#campo-valor{
-    border: 3px solid rgb(75, 70, 70);
-    border-radius: 20px;
-    height: 30px;
-}
-#campo-imagen{
-    border: 3px solid rgb(75, 70, 70);
-    border-radius: 20px;
-    height: 30px;
-}
-#campo-categoria{
-    border: 3px solid rgb(75, 70, 70);
-    border-radius: 20px;
-    height: 30px;
-}
-.modificaciones{
-    display: flex;
-    flex-direction: row;
-    /* background-color: violet; para identificar dimensiones */
-    padding-left: 62px;  
-} 
+/* *************************************************************** Boton de gestion */
 
-.texto-objeto-seleccionado{
-    width: 23%;
-    /* background-color: black; para identificar dimensiones */
-    padding-inline: 85px; 
-    font-size: 18px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+.boton-gestion {
+    display: block;
+    width: 100%;   
+}
+.boton-gestion-productos {
+    margin-left: 545px;
+    font-size: 19px;
+    background-color: rgb(48, 5, 55);
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+.texto-gestion{
     color: white;
-}
-.container-productos{
-    display: flex;
-    flex-direction: row;
-}
-.borrar-modificar{
-    display: flex;
-    flex-direction: row;
-    height: 180px;
-    /* background-color: #54b0e5; esto es para poder ver las dimensiones  */
-}
-.texto-objeto-modificar-borrar{
-    padding: 0px 10px 0px 35px;
-    font-size: 14px;
-    line-height: 180px;
-    width: 23%;
-}
-.texto-objeto-modificar-borrar-imagen{
-    height: 160px;
-    width: 250px;
-    background-color: black;  /*se borra al definir el codigo para la imagen y su tamaño*/
-    border: 3px black;     /*se borra al definir el codigo para la imagen y su tamaño*/
-}
-.boton-modificar{
-    background-color: black;
-    color: white;
-    height: 29px;
-    border-radius: 7px;
-}
-.texto-modificar{
-    padding: 0px 8px 0px 8px;
-}
-.boton-borrar{
-    background-color: black;
-    color: white;
-    height: 29px;
-    border-radius: 7px;  
-}
-.btn-modificar-borrar{
-    line-height: 180px;
-    padding-left: 20px;
-}
-.texto-borrar{
-    padding: 0px 17px 0px 17px;
 }
 @media screen and (max-width: 767px) {     /* Media query para pantallas hasta 767px usamos iphone SE como modelo */
     /******************************************************seccion cocina responsive***************************************/

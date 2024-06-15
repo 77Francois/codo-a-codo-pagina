@@ -436,67 +436,13 @@
         <br>
         <br>
         <br>
-        <!---------------------------------------------------------------- seccion de gestion de nuestros productos ------------------------------------------------------------>
-        <section>   
-            <h1>Admnistracion de productos</h1>
-            <br>
-            <h4 class="texto-titulo-producto">Sector para administrar los productos de cada area.</h4>
-            <form action="#" class="container-alt-baj-mod" id="formRegister" method="GET" novalidate >  <!--  action="" es la ruta por donde va a enviar lo que ingrese por el metodo que especifique. POST lo uso para enviar a un servidor ---------esta clase me permite usar display block/flex-->
-                <div class="alta">  <!--esta clase la uso para display row/flex-->
-                    <div class="form-control-alt-baj-mod">
-                        <label for="campo-producto">Producto</label>
-                        <input type="text" required name="campo-producto" id="campo-producto" placeholder="Ingrese el producto que quieres ">
-                    </div>
-                    <div class="form-control-alt-baj-mod">
-                        <label for="campo-valor">Precio</label>
-                        <input type="text" required name="campo-valor" id="campo-valor" placeholder="Ingrese el valor del producto">  
-                    </div>
-                    <div class="form-control-alt-baj-mod">
-                        <label for="campo-categoria">Categoria</label>
-                        <input type="text" required name="campo-categoria" id="campo-categoria" placeholder="Ingrese la categoria">
-                    </div>
-                    
-                    <div class="form-control-alt-baj-mod">
-                        <label for="campo-imagen">Imagen</label>
-                        <input type="url" class="buscador-de-la-imagen" required name="campo-imagen" id="campo-imagen" placeholder="Ingrese la imagen del producto">    <!--calculo que va un a para ir o buscar algo-->
-                    </div>
-                    <input type="hidden" name="id" id="id-producto">
-                    <div class="btn-agregar">
-                        <button type="submit" class="boton-agregar" id="btn-agregado">  <!-- tengo que ver showAlert-->
-                            <p class="texto-agregar">Agregar</p>   
-                        </button>
-                    </div>
-                </div>
-            </form>
-        </section>
-        <h3>Administracion de modificaciones y eliminacion de productos.</h3>
-        <section class="container-productos" id="lista-producto">
-            
-            <table class="modificaciones">
-                <thead>
-                    <tr class="titulos">
-                        <th class="texto-objeto-seleccionado">Producto</th>
-                        <th class="texto-objeto-seleccionado">Precio</th>
-                        <th class="texto-objeto-seleccionado">Categoria</th>
-                        <th class="texto-objeto-seleccionado">Imagen</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                </tbody>
-            </table>
-            <div class="btn-modificar-borrar">
-                <button type="submit" class="boton-modificar" id="btn-modificado">  
-                    <p class="texto-modificar">Modificar</p>   
-                </button>
-                <button type="submit" class="boton-borrar" id="btn-borrado">  
-                    <p class="texto-borrar">Borrar</p>   
-                </button>
-            </div>
-        </section>
-                  
-            
-        
+        <div class="boton-gestion">
+            <button class="boton-gestion-productos">
+                <a href="./templates/altas-bajas-modificaciones.html" class="texto-gestion">GESTION DE PRODUCTOS</a>
+            </button>
+        </div>
+        <br>
+        <br>
         <br>
         <div class="boton">
             <a href="#ar"><i class="fa-solid fa-circle-chevron-up"></i></a>

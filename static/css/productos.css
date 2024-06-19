@@ -56,35 +56,15 @@ label{
     color: white;
 }    
 
-#campo-producto{
+.campo-input{
     border: 3px solid rgb(75, 70, 70);
     border-radius: 20px;
     height: 30px;
     cursor: pointer;
 }
 
-#campo-valor{
-    border: 3px solid rgb(75, 70, 70);
-    border-radius: 20px;
-    height: 30px;
-    cursor: pointer;
-}
-
-#campo-categoria{
-    border: 3px solid rgb(75, 70, 70);
-    border-radius: 20px;
-    height: 30px;
-    cursor: pointer;
-}
-
-#campo-imagen{
-    border: 3px solid rgb(75, 70, 70);
-    border-radius: 20px;
-    height: 30px;
-    cursor: pointer;
-}
 .btn-agregar{
-    line-height: 95px;
+    line-height: 145px;
 }
 .boton-agregar{
     background-color: black;
@@ -99,33 +79,42 @@ label{
 
 
 h3{
+    /* align-self: center;   usar7probar */
     margin-left: 425px;  
     padding-top: 40px;
     padding-bottom: 40px;
 }
 .container-productos{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .modificaciones{
-    display: flex;
-    flex-direction: row;
-    /* background-color: violet; para identificar dimensiones */
-    padding-left: 62px;  
+    margin-left: 50px;
+    width: 100%;
+    margin-bottom: 15px;
+    color: white;
+    vertical-align: top;
 } 
 .texto-objeto-seleccionado{
-    width: 23%;
-    /* background-color: black; para identificar dimensiones */
-    padding-inline: 85px; 
-    font-size: 18px;
+    background-color: black; /*para identificar dimensiones */
+    /* padding-left: 10px; */
+    font-size: 21px;
     padding-top: 15px;
     padding-bottom: 15px;
     color: white;
 }
-.btn-modificar-borrar{
+#tb-modificaciones{
+    background-color: aqua;
+    align-self: center;
+    text-align: center;
+}
+
+/* .btn-modificar-borrar{
     line-height: 180px;
     padding-left: 20px;
-}
+} */
 .boton-borrar{
     background-color: black;
     color: white;

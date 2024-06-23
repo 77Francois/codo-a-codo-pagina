@@ -1,58 +1,99 @@
-class Producto{
-
-    constructor(id,producto,precio,categoria,imagen){
-        this.id=id;
-        this.producto=producto;
-        this.precio=precio;
-        this.categoria=categoria;
-        this.imagen=imagen;
+class Producto {
+    constructor(id, producto, precio, categoria, imagen) {
+        this.id = id;
+        this.producto = producto;
+        this.precio = precio;
+        this.categoria = categoria;
+        this.imagen = imagen;
     }
 }
 
-const cocina1 = new Producto(1,'mesada',150000,'cocina','https://images.pexels.com/photos/4253292/pexels-photo-4253292.jpeg');  // solo se creo para hacer pruebas
-const cocina2 = new Producto(2,'anafes',300856,'cocina','https://images.pexels.com/photos/6937479/pexels-photo-6937479.jpeg');   // solo se creo para hacer pruebas
-let productossss=[cocina1,cocina2];   //solo por ahora, hago que el servidor me trae estos datos ya cargados
-
-console.log(productossss)
-
-function muestraProductos(){
-    const tbModificacion = document.querySelector('#tb-modificaciones');  //BUSQUE EL ELEMENTO HTML donde quiero insertar los productos
-
-    // construllo lo que me voy a tbody en formato string
+function muestraProductos() {
+    let productossss = JSON.parse(localStorage.getItem('productossss')) || [];
+    const tbModificacion = document.querySelector('#tb-modificaciones');
+    tbModificacion.innerHTML = '';
+    
     productossss.forEach(prod => {
         const tr = `
-                    <tr>
-                        <td>${prod.producto}</td>
-                        <td>${prod.precio}</td>
-                        <td>${prod.categoria}</td>
-                        <td>
-                            <img src="${prod.imagen}" alt="${prod.producto}" width="80px" height="129px">
-                        </td>
-                        <td>
-                            <button class="boton-borrar">BORRAR</button>
-                            <button class="boton-modificar">MODIFICAR</button>
-                        </td>
-                    </tr> 
+            <tr>
+                <td>${prod.producto}</td>
+                <td>${prod.precio}</td>
+                <td>${prod.categoria}</td>
+                <td>
+                    <img src="${prod.imagen}" alt="${prod.producto}" width="120px" height="149px">
+                </td>
+                <td>
+                    <button class="boton-borrar" onclick="borrarProducto(${prod.id})">BORRAR</button>
+                    <button class="boton-modificar" onclick="editarProducto(${prod.id})">MODIFICAR</button>
+                </td>
+            </tr>
         `;
-        tbModificacion.insertAdjacentHTML('beforeend',tr);
+        tbModificacion.insertAdjacentHTML('beforeend', tr);
     });
-
-    // para uno solo
-    // const tr = `      
-    //             <tr>
-    //                 <td>${productossss.producto}</td>
-    //                 <td>${productossss.precio}</td>
-    //                 <td>${productossss.categoria}</td>
-    //                 <td>
-    //                     <img src = "${productossss.imagen}" alt="${productossss.producto}" width="30%">
-    //                 </td>
-    //                 <td>
-    //                     <button class="boton-borrar">BORRAR</button>
-    //                 </td>
-    //             </tr>
-    // `;
-    // tbModificacion.insertAdjacentHTML("beforeend", tr);
-
 }
 
-muestraProductos();
+function guardaProductos(event) {
+    event.preventDefault();
+    const entradaProducto = document.querySelector('#campo-producto');
+    const entradaPrecio = document.querySelector('#campo-valor');
+    const entradaCategoria = document.querySelector('#campo-categoria');
+    const entradaImagen = document.querySelector('#campo-imagen');
+    const idProducto = document.querySelector('#id-producto').value;
+
+    let productossss = JSON.parse(localStorage.getItem('productossss')) || [];
+
+    if (idProducto) {
+        // Editar producto existente
+        productossss = productossss.map(prod => {
+            if (prod.id == idProducto) {
+                return new Producto(
+                    prod.id,
+                    entradaProducto.value,
+                    entradaPrecio.value,
+                    entradaCategoria.value,
+                    entradaImagen.value
+                );
+            }
+            return prod;
+        });
+    } else {
+        // Agregar nuevo producto
+        const newProducto = new Producto(
+            productossss.length + 1,
+            entradaProducto.value,
+            entradaPrecio.value,
+            entradaCategoria.value,
+            entradaImagen.value
+        );
+        productossss.push(newProducto);
+    }
+
+    localStorage.setItem('productossss', JSON.stringify(productossss));
+    muestraProductos();
+    document.querySelector('#form-productos').reset();
+    document.querySelector('#id-producto').value = '';
+}
+
+function borrarProducto(id) {
+    let productossss = JSON.parse(localStorage.getItem('productossss')) || [];
+    productossss = productossss.filter(prod => prod.id !== id);
+    localStorage.setItem('productossss', JSON.stringify(productossss));
+    muestraProductos();
+}
+
+function editarProducto(id) {
+    let productossss = JSON.parse(localStorage.getItem('productossss')) || [];
+    const producto = productossss.find(prod => prod.id === id);
+    if (producto) {
+        document.querySelector('#campo-producto').value = producto.producto;
+        document.querySelector('#campo-valor').value = producto.precio;
+        document.querySelector('#campo-categoria').value = producto.categoria;
+        document.querySelector('#campo-imagen').value = producto.imagen;
+        document.querySelector('#id-producto').value = producto.id;
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    muestraProductos();
+    document.querySelector('#form-productos').addEventListener('submit', guardaProductos);
+});

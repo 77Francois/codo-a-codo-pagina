@@ -98,7 +98,7 @@ h3{
     vertical-align: top;
 } 
 .texto-objeto-seleccionado{
-    background-color: black; /*para identificar dimensiones */
+    /*background-color: black; para identificar dimensiones */
     /* padding-left: 10px; */
     font-size: 21px;
     padding-top: 15px;
@@ -106,11 +106,11 @@ h3{
     color: white;
 }
 #tb-modificaciones{
-    background-color: aqua;
+    /* background-color: aqua;  PARA TRABAJAR CON DIMENSIONES VISIBLES */
     align-self: center;
     text-align: center;
 }
-
+/********************************************************************a partir de aqui ver que borrar**********************************************/
 /* .btn-modificar-borrar{
     line-height: 180px;
     padding-left: 20px;
@@ -122,7 +122,7 @@ h3{
     border-radius: 7px;  
     cursor: pointer;
 }
-.texto-borrar{
+/* .texto-borrar{
     padding: 0px 17px 0px 17px;
 }
 .texto-modificar{
@@ -134,20 +134,20 @@ h3{
     display: flex;
     flex-direction: row;
     height: 180px;
-    /* background-color: #54b0e5; esto es para poder ver las dimensiones  */
+    background-color: #54b0e5; esto es para poder ver las dimensiones 
 }
 .texto-objeto-modificar-borrar{
     padding: 0px 10px 0px 35px;
     font-size: 14px;
     line-height: 180px;
     width: 23%;
-}
-.texto-objeto-modificar-borrar-imagen{
+} */
+/* .texto-objeto-modificar-borrar-imagen{
     height: 160px;
     width: 250px;
-    background-color: black;  /*se borra al definir el codigo para la imagen y su tamaño*/
-    border: 3px black;     /*se borra al definir el codigo para la imagen y su tamaño*/
-}
+    background-color: black;  se borra al definir el codigo para la imagen y su tamaño
+    border: 3px black;     se borra al definir el codigo para la imagen y su tamaño
+} */
 .boton-modificar{
     background-color: black;
     color: white;

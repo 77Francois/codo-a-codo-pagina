@@ -15,7 +15,7 @@ async function fetchData(url, method, data = null) {
       },
       body: data ? JSON.stringify(data) : null,  // Si hay datos, los convierte a JSON y los incluye en el cuerpo
   };
-  try {
+  try {   // hace la peticion al server y la captura
     const response = await fetch(url, options);  // Realiza la petición fetch
     if (!response.ok) {
       throw new Error(`Error: ${response.statusText}`);
@@ -28,17 +28,17 @@ async function fetchData(url, method, data = null) {
 }
 
 /**
- * Funcion que permite crear un elemento <tr> para la tabla de peliculas
+ * Funcion que permite crear un elemento <tr> para la tabla de productos
  * por medio del uso de template string de JS.
  */
 async function muestraProductos(){
     let product =  await fetchData(BASEURL+'/api/productos/', 'GET');
-    const tableProducto = document.querySelector('#tabla-objeto-modificaciones tbody');
+    const tableProducto = document.querySelector('#tabla-objeto-modificaciones #tb-modificaciones');
     tableProducto.innerHTML='';   /*limpio la tabla*/
     product.forEach((prod, index) => {
       let tr = `<tr>
                     <td>${prod.category}</td>
-                    <td>${prod.name}</td>
+                    <td>${prod.name}</td> 
                     <td>${prod.price}</td>
                     <td>
                         <img src="${prod.image}" width="120px" height="149px">
@@ -70,7 +70,7 @@ async function guardar_base(){
           title: 'Error!',
           text: 'Campos incompletos.',
           icon: 'error',
-          confirmButtonText: 'Cancelar'
+          confirmButtonText: 'Cerrar'
       });
       return;
     }
@@ -138,7 +138,7 @@ async function modificaProducto(id_product){
     
     idProducto.value = response.id_product;
     category.value = response.category;
-    name.value = response.name;
+    name.value = response.name; 
     price.value = response.price;
     image.value = response.image;
 }

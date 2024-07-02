@@ -1,6 +1,6 @@
 const BASEURL = 'http://127.0.0.1:5000';
 
-/**
+/**F
  * Función para realizar una petición fetch con JSON.
  * @param {string} url - La URL a la que se realizará la petición.
  * @param {string} method - El método HTTP a usar (GET, POST, PUT, DELETE, etc.).
@@ -148,7 +148,7 @@ async function modificaProducto(id_product){
 document.addEventListener('DOMContentLoaded',function(){
     const btnGuardaBase = document.querySelector('#btn-agregado');
     // // //ASOCIAR UNA FUNCION AL EVENTO CLICK DEL BOTON
-    btnGuardaBase.addEventListener('click', guardar_base());
+    btnGuardaBase.addEventListener('click', guardar_base);
     muestraProductos();
 });
    

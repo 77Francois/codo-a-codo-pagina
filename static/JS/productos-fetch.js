@@ -66,11 +66,11 @@ async function guardar_base(){
     const image = document.querySelector('#campo-image').value;
     //VALIDACION DE FORMULARIO
     if (!category || !name || !price || !image) {
-      Swal.fire({    // tengo que poner el de registro
-          title: 'Error!',
-          text: 'Campos incompletos.',
-          icon: 'error',
-          confirmButtonText: 'Cerrar'
+      Swal.fire({
+        icon: "ERROR",
+        title: "Oops...",
+        text: "Algo salio mal!",
+        
       });
       return;
     }
@@ -109,9 +109,13 @@ async function guardar_base(){
  */
 function borrarProducto(id_product){
     Swal.fire({
-        title: "Esta seguro de eliminar la pelicula?",
-        showCancelButton: true,
-        confirmButtonText: "Eliminar",
+      title: "Estas seguro?",
+      text: "No se podra revertir los cambios!",
+      icon: "Cuidado",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Si borrarlo!"
     }).then(async (result) => {
         if (result.isConfirmed) {
           let response = await fetchData(`${BASEURL}/api/productos/${id_product}`, 'DELETE');
